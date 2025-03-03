@@ -18,8 +18,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'titleFont': ['Be Vietnam Pro', 'sans-serif',],
-        'bodyFont': ['Figtree', 'sans-serif',],
+        'title': ['var(--atkinson)', 'sans-serif',],
+        'bodyFont': ['var(--dmSans)', 'sans-serif',],
       },
       colors: {
         'white90': '#E4E4E7',
