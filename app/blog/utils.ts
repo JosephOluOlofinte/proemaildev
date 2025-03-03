@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { metadata } from "../layout";
 
 
 // get all MDX files from their dir
@@ -22,7 +21,7 @@ function getMDXData(dir: string) {
     const mdxFiles = getMDXFiles(dir);
 
     return mdxFiles.map((file) => {
-        let { data, content } = readMDXFile(path.join(dir, file));
+        const { data: metadata, content } = readMDXFile(path.join(dir, file));
 
         const slug = path.basename(file, path.extname(file));
 
@@ -70,5 +69,17 @@ export function formatDate(date: string, includeRelative = false) {
         formattedDate = "Today";
     }
 
-    const fullDate = targetDate.toLocaleString
+    const fullDate = targetDate.toLocaleString("en-US", {
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+    })
+
+    if(!includeRelative) {
+        return fullDate
+    }
+
+    else {
+        return `${fullDate} (${formattedDate})`
+    }
 }
