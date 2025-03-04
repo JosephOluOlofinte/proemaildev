@@ -11,7 +11,7 @@ const Header = () => {
       <header className="w-full flex flex-col items-center justify-center">
         <div className="h-[40px] w-full flex items-center justify-center bg-brandBlue10">
           <div className="w-[90%] h-full flex justify-end">
-            <a href="https://www.linkedin.com/in/joseph-olu" className="h-full flex items-center gap-[10px] font-semibold">
+            <a href="https://www.linkedin.com/in/joseph-olu" className="h-full flex items-center gap-[6px] font-semibold">
               <AiOutlineLinkedin size={24} className="" />
               <p className="leading-none">Connect on LinkedIn</p>
             </a>

@@ -44,7 +44,9 @@ export default {
         'absoluteWhite': '#ffffff',
         'absoluteBlack': '#000000',
       },
-
+      backgroundImage: {
+        'heroBgImg': "url('/images/heroBG.jpg')",
+      },
       keyframes: {
         slide: {  
           'from': { transform: 'translateX(0)' },
