@@ -23,11 +23,12 @@ export default {
       },
       colors: {
         'brandBlue10': '#E9E6FA',
-        'brandBlue20': 'D3CEF6',
+        'brandBlue20': '#D3CEF6',
         'brandBlue40': '#ADA3EC',
         'brandBlue60': '#8778E3',
         'brandBlue80': '#624DD9',
         'brandBlue100': '#3D22CF',
+        'darkBlue100': '#0A1C8F',
         'white90': '#E4E4E7',
         'white95': '#F1F1F3',
         'white97': '#F7F7F8',
