@@ -2,7 +2,7 @@ import React from 'react'
 
 const QuickAbout = () => {
   return (
-    <div>QuickAbout</div>
+    <div className=''>QuickAbout</div>
   )
 }
 

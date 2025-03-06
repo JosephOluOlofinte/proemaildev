@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Atkinson_Hyperlegible, DM_Sans } from "next/font/google";
 import "../styles/globals.css";
 import "../styles/boilerplate.css";
+// import purpleBg from "../public/images/ellipse-3.png"
+// import greenBg from "../public/images/ellipse-4.png"
+// import Image from "next/image";
 
 const atkinson = Atkinson_Hyperlegible({
   weight: ["400", "700"],
@@ -28,8 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${atkinson.className} ${dmSans.className}`}
+        className={`${atkinson.className} ${dmSans.className} `}
       >
+        {/* <Image src={purpleBg} alt="" height={400} width={871} className="absolute right-0" /> */}
+        {/* <Image src={greenBg} alt="" height={1044} width={1044} className="fixed z-10 right-0" /> */}
         {children}
       </body>
     </html>
