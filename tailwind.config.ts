@@ -11,10 +11,10 @@ export default {
       'mobile': '390px',
       'xlmobile': '480px',
       'tablet': '640px',
-      'xltablet': '768px',
+      'lgtablet': '768px',
       'laptop': '1024px',
       'lglaptop': '1280px',
-      'desktop': '1920px', 
+      'desktop': '1440px', 
     },
     extend: {
       fontFamily: {

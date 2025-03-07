@@ -11,7 +11,7 @@ const projectInfo = () => {
             <h1 className="text-2xl font-bold text-indigo-600">Your Name</h1>
             <p className="text-gray-600">HTML Email Developer</p>
           </div>
-          <nav className="mt-4 md:mt-0">
+          <nav className="mt-4 xltablet:mt-0">
             <ul className="flex space-x-6">
               <li className="text-indigo-600 font-medium">Portfolio</li>
               <li className="text-gray-600 hover:text-indigo-600">About</li>

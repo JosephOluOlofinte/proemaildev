@@ -4,7 +4,7 @@ const ProjectSlider = () => {
   return (
     <Fragment>
       {/* Portfolio Grid */}
-      <section className="max-w-5xl mx-auto px-6 py-16">
+      <section className="w-[85%] my-0 mx-auto py-16">
         <h2 className="text-3xl font-bold mb-8 text-center">Featured Email Projects</h2>
         
         <div className="grid grid-cols-1 tablet:grid-cols-2 lglaptop:grid-cols-3 gap-8">

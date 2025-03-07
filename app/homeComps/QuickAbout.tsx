@@ -8,7 +8,7 @@ const QuickAbout = () => {
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center">My Development Process</h2>
           
-          <div className="grid grid-cols-1 xltablet:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lgtablet:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-indigo-100 text-indigo-700 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
               <h3 className="font-bold text-xl mb-2">Requirements</h3>
@@ -31,11 +31,11 @@ const QuickAbout = () => {
       </section>
       
       {/* Technical Skills */}
-      <section className="max-w-5xl mx-auto px-6 py-16">
+      <section className="w-[85%] my-0 mx-auto py-16">
         <h2 className="text-3xl font-bold mb-8 text-center">Technical Expertise</h2>
         
-        <div className="grid grid-cols-1 xltablet:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-md">
+        <div className="grid grid-cols-1 lgtablet:grid-cols-2 gap-8">
+          <div className="bg-white p-6 pl-[60px] rounded-lg shadow-md">
             <h3 className="font-bold text-xl mb-4">Core Skills</h3>
             <ul className="space-y-2">
               <li className="flex items-center">
@@ -61,7 +61,7 @@ const QuickAbout = () => {
             </ul>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-white p-6 pl-[60px] rounded-lg shadow-md">
             <h3 className="font-bold text-xl mb-4">Tools & Platforms</h3>
             <ul className="space-y-2">
               <li className="flex items-center">

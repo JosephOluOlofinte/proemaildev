@@ -1,6 +1,6 @@
 
 .contain {
-    max-width: 1920px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -83,18 +83,4 @@ html {
     h6 { font-size: 1.125rem; /* 18px */ }
   }
   
-  @media (min-width: 1921px) {
-    /* Extra-large screens (1921px and above) */
-    body, p, div p, li {
-      font-size: 1.25rem; /* 20px */
-      line-height: 1.8;
-    }
-  
-    h1 { font-size: 2.75rem; /* 44px */ }
-    h2 { font-size: 2.5rem; /* 40px */ }
-    h3 { font-size: 2.25rem; /* 36px */ }
-    h4 { font-size: 2rem; /* 32px */ }
-    h5 { font-size: 1.75rem; /* 28px */ }
-    h6 { font-size: 1.5rem; /* 24px */ }
-  }
   
