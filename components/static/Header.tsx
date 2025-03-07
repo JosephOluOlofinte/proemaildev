@@ -17,7 +17,8 @@ const Header = () => {
             </a>
           </div>        
         </div>
-        <div className="w-[85%] h-[70px] flex items-center justify-between">
+
+        <div className="w-[85%] h-[100px] flex items-center justify-between">
           <div>
             <h1 className="min-w-fit text-[28px]">Pro <br />Email Developer</h1>
           </div>
