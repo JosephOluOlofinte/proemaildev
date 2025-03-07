@@ -11,8 +11,8 @@ const page = () => {
     <Fragment>
       <Header />
       <Hero />
-      <QuickAbout />
       <ProjectSlider />
+      <QuickAbout />
       <Contact />
       <Footer />
     </Fragment>
