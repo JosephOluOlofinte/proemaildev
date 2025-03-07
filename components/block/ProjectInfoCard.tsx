@@ -14,10 +14,12 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4"> {title} </h1>
           <div className="flex flex-wrap gap-2 mb-6">
-            <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">{tags} </span>
-            <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Dark Mode</span>
-            <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">MJML</span>
-            <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Interactive</span>
+          {tags.map((tag, index) => (
+
+                <div key={index} className="">
+                <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">{tags} </span>
+                </div>
+            ))}
           </div>
           <p className="text-lg text-gray-700 max-w-3xl">
             {desc}
