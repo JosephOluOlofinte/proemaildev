@@ -35,18 +35,14 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
               <p className="text-gray-700 mb-4">
                 {projectOverv.challenge}
               </p>
-              <ul className="list-disc pl-5 text-gray-700 space-y-2">
-                {projectOverv.challengeList}
-              </ul>
+              <ul dangerouslySetInnerHTML={{ __html: projectOverv.challengeList }} className="list-disc pl-5 text-gray-700 space-y-2" />
             </div>
             <div>
               <h3 className="font-medium mb-3">The Solution</h3>
               <p className="text-gray-700 mb-4">
                 {projectOverv.solution}
               </p>
-              <ul className="list-disc pl-5 text-gray-700 space-y-2">
-                {projectOverv.solutionList}
-              </ul>
+              <ul dangerouslySetInnerHTML={{ __html: projectOverv.solutionList }} className="list-disc pl-5 text-gray-700 space-y-2" />
             </div>
           </div>
         </section>
