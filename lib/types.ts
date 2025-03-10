@@ -15,6 +15,10 @@ export type ButtonProps = {
   
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
+export type Tags = {
+    id: number;
+    tag: string;
+}
 
 export type ProjectOverview = {
     challenge: string;
@@ -23,9 +27,12 @@ export type ProjectOverview = {
     solutionList: string;
 }
 
+
 export type ProjectInfoProp = {
+    id: number;
+    slug: string;
     title: string;
-    tags: string[];
+    tags: Tags[];
     desc: string;
     projectOverv: ProjectOverview;
     oriDesign: string;

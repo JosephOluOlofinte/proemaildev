@@ -17,7 +17,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           {tags.map((tag, index) => (
 
                 <div key={index} className="">
-                <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">{tags} </span>
+                <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">{tag.tag} </span>
                 </div>
             ))}
           </div>
