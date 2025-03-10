@@ -4,7 +4,7 @@ export const projectData: ProjectInfoProp[] = [
     {
         id: 1,
         slug: "e-commerce-seasonal-campaign",
-        title: "E-commerce Seasonal Campaign",
+        title: "E-commerce seasonal campaign",
         tags: [
           {id: 1, tag: "Responsive"}, 
           {id: 2, tag: "Dark Mode"}, 

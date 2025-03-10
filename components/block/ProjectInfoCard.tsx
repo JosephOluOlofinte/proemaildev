@@ -12,7 +12,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
         <main className="max-w-5xl mx-auto px-6 py-12">
         {/* Project Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-4"> {title} </h1>
+          <h1 className="font-bold mb-4"> {title} </h1>
           <div className="flex flex-wrap gap-2 mb-6">
           {tags.map((tag, index) => (
 
@@ -21,17 +21,17 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                 </div>
             ))}
           </div>
-          <p className="text-lg text-gray-700 max-w-3xl">
+          <p className=" text-gray-700 max-w-3xl">
             {desc}
           </p>
         </div>
 
         {/* Project Overview */}
         <section className="mb-16 bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold mb-6">Project Overview</h2>
+          <h2 className="font-bold mb-6">Project Overview</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-medium mb-3">The Challenge</h3>
+              <h3 className="font-medium mb-3">The Challenge</h3>
               <p className="text-gray-700 mb-4">
                 {projectOverv.challenge}
               </p>
@@ -40,7 +40,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-medium mb-3">The Solution</h3>
+              <h3 className="font-medium mb-3">The Solution</h3>
               <p className="text-gray-700 mb-4">
                 {projectOverv.solution}
               </p>
@@ -53,17 +53,17 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
 
         {/* Design Comparison */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6">Design to Code</h2>
+          <h2 className="font-bold mb-6">Design to Code</h2>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-6 border-r border-b md:border-b-0">
-                <h3 className="text-xl font-medium mb-4">Original Design</h3>
+                <h3 className="font-medium mb-4">Original Design</h3>
                 <div className="bg-gray-200 h-96 flex items-center justify-center">
                   <span className="text-gray-500"> {oriDesign} </span>
                 </div>
               </div>
               <div className="p-6 border-b md:border-b-0">
-                <h3 className="text-xl font-medium mb-4">HTML Implementation</h3>
+                <h3 className="font-medium mb-4">HTML Implementation</h3>
                 <div className="bg-gray-200 h-96 flex items-center justify-center">
                   <span className="text-gray-500"> {htmlImp} </span>
                 </div>
@@ -74,22 +74,22 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
 
         {/* Responsive Views */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6">Responsive Behavior</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <h2 className="font-bold mb-6">Responsive Behavior</h2>
+          <div className="grid grid-cols-1 lgtablet:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-medium mb-4">Desktop View</h3>
+              <h3 className="font-medium mb-4">Desktop View</h3>
               <div className="bg-gray-200 h-80 w-full flex items-center justify-center">
                 <span className="text-gray-500"> {desktopView} </span>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-medium mb-4">Tablet View</h3>
+              <h3 className="font-medium mb-4">Tablet View</h3>
               <div className="bg-gray-200 h-80 w-full flex items-center justify-center">
                 <span className="text-gray-500"> {tabView} </span>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-medium mb-4">Mobile View</h3>
+              <h3 className="font-medium mb-4">Mobile View</h3>
               <div className="bg-gray-200 h-80 w-full flex items-center justify-center">
                 <span className="text-gray-500"> {mobView} </span>
               </div>
@@ -99,10 +99,10 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
 
         {/* Technical Challenges */}
         <section className="mb-16 bg-white rounded-lg shadow-md p-8">
-          <h2 className="text-2xl font-bold mb-6">Technical Challenges</h2>
+          <h2 className="font-bold mb-6">Technical Challenges</h2>
           
           <div className="mb-8">
-            <h3 className="text-xl font-medium mb-3">Dark Mode Support</h3>
+            <h3 className="font-medium mb-3">Dark Mode Support</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
               <div className="bg-gray-200 h-64 flex items-center justify-center">
                 <span className="text-gray-500"> {lightMode} </span>
@@ -124,7 +124,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           </div>
           
           <div>
-            <h3 className="text-xl font-medium mb-3">Outlook VML Background Fix</h3>
+            <h3 className="font-medium mb-3">Outlook VML Background Fix</h3>
             <div className="bg-gray-50 p-4 rounded border mb-4">
               <pre className="text-sm text-gray-800 overflow-x-auto">
                 <code>
@@ -140,8 +140,8 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
 
         {/* Client Testing */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-6">Email Client Testing</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <h2 className="font-bold mb-6">Email Client Testing</h2>
+          <div className="grid grid-cols-1 lgtablet:grid-cols-2 laptop:grid-cols-3 gap-4">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="bg-gray-200 h-48 flex items-center justify-center">
                 <span className="text-gray-500"> {gmail} </span>
