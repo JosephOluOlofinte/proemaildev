@@ -20,7 +20,9 @@ const Header = () => {
 
         <div className="w-[90%] tablet:w-[95%] latop:w-[85%] h-[100px] flex items-center justify-between">
           <div>
-            <h1 className="min-w-fit text-[28px]">Pro <br />Email Developer</h1>
+            <Link href="/">
+              <h1 className="min-w-fit text-[28px]">Pro <br />Email Developer</h1>
+            </Link>
           </div>
           <nav className="hidden xltablet:flex">
             <ul className="flex gap-[30px] font-medium">
