@@ -2,12 +2,18 @@
 
 
 // type declarations for the button props
+export type ButtonVariant = "primary" | "secondary" | "danger" | "whiteBtn" | "greyBtn" | "courseBtn";
+
+export type ButtonSize = "small" | "medium" | "large";
+
+export type Buttontype = "button" | "submit" | "reset"
+
 export type ButtonProps = {
     text?: string; 
     url?: string;
-    variant?: "primary" | "secondary" | "danger" | "whiteBtn" | "greyBtn" | "courseBtn";
-    size?: "small" | "medium" | "large"; 
-    type?: "button" | "submit" | "reset";
+    variant?: ButtonVariant;
+    size?: ButtonSize; 
+    type?: Buttontype;
     className?: string;
     children?: React.ReactNode;
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
@@ -15,9 +21,6 @@ export type ButtonProps = {
   
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export type ButtonVariant = "primary" | "secondary" | "danger" | "whiteBtn" | "greyBtn" | "courseBtn";
-
-export type ButtonSize = "small" | "medium" | "large";
 
 
 // type declarations for the full project information data

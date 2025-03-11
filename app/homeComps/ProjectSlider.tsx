@@ -1,3 +1,4 @@
+import FeaturedProject from '@/components/block/FeaturedProject'
 import React, { Fragment } from 'react'
 
 const ProjectSlider = () => {
@@ -9,6 +10,13 @@ const ProjectSlider = () => {
         
         <div className="grid grid-cols-1 tablet:grid-cols-2 lglaptop:grid-cols-3 gap-8">
           {/* Project 1 */}
+
+          <FeaturedProject 
+            imgPreview='Email Preview' 
+            title='E-commerce Newsletter' 
+            desc='Responsive promotional email with interactive elements' 
+            tag1='Responsive' tag2='Dark Mode' tag3='MJML' />
+
           <div className="bg-white rounded-lg overflow-hidden shadow-md">
             <div className="h-64 bg-gray-200 relative">
               <div className="absolute inset-0 flex items-center justify-center text-gray-500">Email Preview</div>
