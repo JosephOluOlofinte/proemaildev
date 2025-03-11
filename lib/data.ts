@@ -37,4 +37,45 @@ export const projectData: ProjectInfoProp[] = [
         ctaCopy: "I can help you create responsive, accessible HTML emails that look great across all major email clients."
     },
 
+    {
+      id: 2,
+      slug: "rss-promotional-email-suite",
+      title: "Red Stick Spice Co. Promotional Email Suite",
+      tags: [
+        {id: 1, tag: "Responsive"}, 
+        {id: 2, tag: "Vibrant Design"}, 
+        {id: 3, tag: "MJML"}, 
+        {id: 4, tag: "Product Showcase"},
+        {id: 5, tag: "Campaign Series"},
+      ],
+      desc: "A series of vibrant and engaging email templates for Red Stick Spice Co., containing 4 emails and focusing on promoting their premium spice products. The goal was to create visually appealing, user-friendly designs that effectively communicate the brand's message and drive customer engagement.",
+      projectOverv: {
+          challenge: "Create a cohesive series of promotional emails that would showcase Red Stick Spice Co.'s premium products while maintaining their artisanal brand identity and driving sales through visually compelling content.",
+          challengeList: 
+              `<li>Showcase product photography in an appetizing way</li>
+              <li>Create a consistent yet unique design for each campaign</li>
+              <li>Ensure mobile responsiveness across all email clients</li>
+              <li>Incorporate clear calls-to-action to drive conversions</li>
+              <li>Maintain brand voice while creating excitement for promotions</li>`,
+          solution: "I developed a series of four distinct yet cohesive email templates, each featuring striking hero images, bold headlines, and carefully structured content to highlight product features and promotional offers.",
+          solutionList: 
+              `<li>Bold, attention-grabbing hero sections with product imagery</li>
+              <li>Strategic color palette aligned with brand guidelines</li>
+              <li>Clear typography hierarchy for scanning readability</li>
+              <li>Modular content blocks for featured products</li>
+              <li>Custom CTA buttons optimized for click-through rates</li>`
+      },
+      oriDesign: "",
+      htmlImp: "",
+      desktopView: "",
+      tabView: "",
+      mobView: "",
+      gmail: "",
+      outlook: "",
+      apple: "",
+      alltest: "",
+      ctaTitle: "Need engaging promotional emails for your products?",
+      ctaCopy: "I can help you create visually stunning, high-converting email campaigns that showcase your products and drive customer engagement."
+  },
+
 ]

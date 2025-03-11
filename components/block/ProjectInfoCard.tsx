@@ -9,7 +9,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
 }) => {
   return (
     <>
-        
+      <div className="bg-gray-100 min-h-screen">  
         <main className="max-w-5xl mx-auto px-6 py-12">
         {/* Project Header */}
         <div className="mb-12">
@@ -150,7 +150,8 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           </p>
           <button className="bg-white text-indigo-700 px-6 py-3 rounded-md font-medium">Let&apos;s Work Together</button>
         </section>
-      </main>
+        </main>
+      </div>
     </>
   )
 }
