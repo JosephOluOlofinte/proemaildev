@@ -2,9 +2,17 @@
 import { projectData } from "@/lib/data";
 import ProjectInfoCard from '@/components/block/ProjectInfoCard';
 
-const slug = "e-commerce-seasonal-campaign"
+interface projectProps {
+  params: {
+    slug: string
+  };
+}
 
-const projectInfo = () => {
+const projectInfo = ({ params }: projectProps) => {
+
+  const { slug } = params;
+
+  console.log(params.slug)
 
   const data = projectData.find((item) => item.slug === slug)
   
