@@ -4,10 +4,8 @@
 import React from 'react';
 import Link from "next/link";
 import { ButtonProps } from '@/lib/types';
-
-
-type Variant = "primary" | "secondary" | "danger" | "whiteBtn" | "greyBtn" | "courseBtn";
-type Size = "small" | "medium" | "large";
+import { ButtonVariant } from '@/lib/types';
+import { ButtonSize } from '@/lib/types';
 
 
 
@@ -28,9 +26,9 @@ const Button: React.FC<ButtonProps> = ({
     const baseStyles = "rounded-[6px] transition-all ease-in-out duration-500";
 
     // Define variant styles
-    const variantStyles: Record<Variant, string> = {
-        primary: "bg-orange50 text-absoluteWhite hover:bg-orange70",
-        secondary: "bg-absoluteWhite border-[1px] border-absoluteWhite hover:text-orange50 hover:border-orange50",
+    const variantStyles: Record<ButtonVariant, string> = {
+        primary: "bg-absoluteWhite text-brandAccent border-[1px] border-brandAccent hover:bg-brandAccent hover:text-absoluteWhite hover:border-absoluteWhite",
+        secondary: "bg-brandAccent text-absoluteWhite border-[1px] border-absoluteWhite hover:bg-absoluteWhite hover:text-brandAccent hover:border-absoluteWhite",
         danger: "bg-red-500 text-absoluteWhite hover:bg-red-600 focus:ring-red-300",
         whiteBtn: "bg-absoluteWhite hover:bg-white95 ease-in-out duration-500 text-absoluteBlack text-[15px] text-grey15 font-medium inline-block",
         greyBtn: "bg-white97 border-[1px] border-white95 rounded-[6px] w-[100%] text-center hover:bg-white95 hover:border-white90",
@@ -38,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({
     }
 
     // Define size styles
-    const sizeStyles: Record<Size, string> = {
+    const sizeStyles: Record<ButtonSize, string> = {
         small: "py-[6px] px-[14px] laptop:px-[16px] font-medium",
         medium: "py-[10px] laptop:py-[12px] px-[20px] laptop:px-[24px] font-semibold",
         large: "py-[14px] laptop:py-[16px] px-[24px] laptop:px-[34px] font-semibold",

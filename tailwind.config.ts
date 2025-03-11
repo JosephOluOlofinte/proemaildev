@@ -22,7 +22,7 @@ export default {
         'bodyFont': ['var(--dmSans)', 'sans-serif',],
       },
       colors: {
-        'brandAccent': '#8431CC',
+        'brandAccent': '#132238',
         'white90': '#E4E4E7',
         'white95': '#F1F1F3',
         'white97': '#F7F7F8',

@@ -1,7 +1,7 @@
 
 
 
-
+// type declarations for the button props
 export type ButtonProps = {
     text?: string; 
     url?: string;
@@ -15,6 +15,12 @@ export type ButtonProps = {
   
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
+export type ButtonVariant = "primary" | "secondary" | "danger" | "whiteBtn" | "greyBtn" | "courseBtn";
+
+export type ButtonSize = "small" | "medium" | "large";
+
+
+// type declarations for the full project information data
 export type Tags = {
     id: number;
     tag: string;
@@ -48,4 +54,16 @@ export type ProjectInfoProp = {
     outlook: string;
     apple: string;
     alltest: string;
+}
+
+// type declaration for homepage featured projects and 
+// /projects page
+export type FeaturedProjectProp = {
+    imgPreview: string;
+    title: string;
+    desc: string;
+    tags?: Tags[];
+    tag1?: string;
+    tag2?: string;
+    tag3?: string;
 }

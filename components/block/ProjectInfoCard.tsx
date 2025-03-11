@@ -2,6 +2,7 @@
 
 import { ProjectInfoProp } from "@/lib/types"
 
+
 const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
     title, tags, desc, projectOverv, oriDesign, htmlImp,
     desktopView, tabView, mobView, lightMode, darkMode,
@@ -9,23 +10,28 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
 }) => {
   return (
     <>
-        <main className="max-w-5xl mx-auto px-6 py-12">
         {/* Project Header */}
-        <div className="mb-12">
-          <h1 className="font-bold mb-4"> {title} </h1>
-          <div className="flex flex-wrap gap-2 mb-6">
-          {tags.map((tag, index) => (
+        <section className="bg-brandAccent w-[100%] flex justify-center text-absoluteWhite py-20 mt-5 rounded-3xl">
+          <div className="w-full">
+            <div className="max-w-5xl mx-auto px-6">
+              <h1 className="font-bold mb-4"> {title} </h1>
+              <div className="flex flex-wrap gap-2 mb-6">
+              {tags.map((tag, index) => (
 
-                <div key={index} className="">
-                <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">{tag.tag} </span>
-                </div>
-            ))}
+                  <div key={index} className="">
+                  <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">{tag.tag} </span>
+                  </div>
+
+                ))}
+              </div>
+              <p className="max-w-3xl">
+                {desc}
+              </p>
+            </div>
           </div>
-          <p className=" text-gray-700 max-w-3xl">
-            {desc}
-          </p>
-        </div>
-
+        </section>
+        
+        <main className="max-w-5xl mx-auto px-6 py-10">
         {/* Project Overview */}
         <section className="mb-16 bg-white rounded-lg shadow-md p-8">
           <h2 className="font-bold mb-6">Project Overview</h2>
