@@ -3,19 +3,18 @@ import { projectData } from "@/lib/data";
 import ProjectInfoCard from '@/components/block/ProjectInfoCard';
 
 interface projectProps {
-  params: {
+  params: Promise<{
     slug: string
-  };
+  }>;
 }
 
-const projectInfo = ({ params }: projectProps) => {
+const projectInfo = async (props: projectProps) => {
+  const params = await props.params;
 
   const { slug } = params;
 
-  console.log(params.slug)
-
   const data = projectData.find((item) => item.slug === slug)
-  
+
   return data ? <ProjectInfoCard {...data} /> : 
   <>
     <main className="max-w-5xl h-screen mx-auto px-6 py-12">
