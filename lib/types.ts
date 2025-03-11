@@ -49,14 +49,12 @@ export type ProjectInfoProp = {
     desktopView: string;
     tabView: string;
     mobView: string;
-    lightMode: string;
-    darkMode: string;
-    code1: string;
-    code2: string;
     gmail: string;
     outlook: string;
     apple: string;
     alltest: string;
+    ctaTitle: string;
+    ctaCopy: string;
 }
 
 // type declaration for homepage featured projects and 

@@ -17,53 +17,24 @@ const ProjectSlider = () => {
             desc='Responsive promotional email with interactive elements' 
             tag1='Responsive' tag2='Dark Mode' tag3='MJML' />
 
-          <div className="bg-white rounded-lg overflow-hidden shadow-md">
-            <div className="h-64 bg-gray-200 relative">
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500">Email Preview</div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-bold text-lg mb-2">E-commerce Newsletter</h3>
-              <p className="text-gray-600 mb-3">Responsive promotional email with interactive elements</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Responsive</span>
-                <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Dark Mode</span>
-                <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">MJML</span>
-              </div>
-            </div>
-          </div>
           
           {/* Project 2 */}
-          <div className="bg-white rounded-lg overflow-hidden shadow-md">
-            <div className="h-64 bg-gray-200 relative">
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500">Email Preview</div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-bold text-lg mb-2">Transactional Email Suite</h3>
-              <p className="text-gray-600 mb-3">Set of transactional emails for SaaS platform</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Outlook</span>
-                <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Accessible</span>
-                <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Custom</span>
-              </div>
-            </div>
-          </div>
+          <FeaturedProject 
+            imgPreview='Email Preview' 
+            title='Transactional Email Suite' 
+            desc='Set of transactional emails for SaaS platform' 
+            tag1='Outlook' tag2='Accessible' tag3='Custom' />
+
           
           {/* Project 3 */}
-          <div className="bg-white rounded-lg overflow-hidden shadow-md">
-            <div className="h-64 bg-gray-200 relative">
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500">Email Preview</div>
-            </div>
-            <div className="p-4">
-              <h3 className="font-bold text-lg mb-2">Interactive Newsletter</h3>
-              <p className="text-gray-600 mb-3">Interactive content with fallbacks for all clients</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">AMP for Email</span>
-                <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Fallbacks</span>
-                <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Animation</span>
-              </div>
-            </div>
-          </div>
-        </div>
+          <FeaturedProject 
+            imgPreview='Email Preview' 
+            title='Interactive Newsletter' 
+            desc='Interactive content with fallbacks for all e-mail clients' 
+            tag1='AMP for Email' tag2='Fallbacks' tag3='Animation' />
+
+
+        </div> {/* End of grid */}
         
         <div className="text-center mt-12">
           <button className="border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-md font-medium hover:bg-indigo-600 hover:text-white">View All Projects</button>
