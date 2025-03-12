@@ -57,6 +57,7 @@ const PortfolioDetailPage = () => {
         <section className="mb-16">
           <h2 className="text-2xl font-bold mb-6">The Campaign Series</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="bg-gray-200 h-64 flex items-center justify-center">
                 <span className="text-gray-500">New Product Announcement Email</span>
@@ -70,6 +71,7 @@ const PortfolioDetailPage = () => {
                 </div>
               </div>
             </div>
+
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="bg-gray-200 h-64 flex items-center justify-center">
                 <span className="text-gray-500">Special Offer Email</span>
@@ -83,6 +85,7 @@ const PortfolioDetailPage = () => {
                 </div>
               </div>
             </div>
+            
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="bg-gray-200 h-64 flex items-center justify-center">
                 <span className="text-gray-500">Recipe Collection Email</span>

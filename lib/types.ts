@@ -36,6 +36,13 @@ export type ProjectOverview = {
     solutionList: string;
 }
 
+export type CampaignSeries = {
+    id: number;
+    title: string;
+    desc: string;
+    img: string;
+}
+
 
 export type ProjectInfoProp = {
     id: number;
@@ -49,6 +56,7 @@ export type ProjectInfoProp = {
     desktopView: string;
     tabView: string;
     mobView: string;
+    campaignSeries?: CampaignSeries[];
     gmail: string;
     outlook: string;
     apple: string;

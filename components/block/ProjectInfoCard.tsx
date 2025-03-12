@@ -5,12 +5,13 @@ import { ProjectInfoProp } from "@/lib/types"
 
 const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
     title, tags, desc, projectOverv, oriDesign, htmlImp,
-    desktopView, tabView, mobView, gmail, outlook, apple, alltest, ctaTitle, ctaCopy
+    desktopView, tabView, mobView, campaignSeries, gmail, outlook, apple, alltest, ctaTitle, ctaCopy
 }) => {
   return (
     <>
       <div className="bg-gray-100 min-h-screen">  
         <main className="max-w-5xl mx-auto px-6 py-12">
+
         {/* Project Header */}
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4"> {title} </h1>
@@ -95,6 +96,34 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           </div>
         </section>
 
+        {/* Email suite display */}
+
+        {
+          campaignSeries ?
+          <section className="mb-16">
+            <h2 className="font-bold mb-6">The Campaign Series</h2>
+            <div className="grid grid-cols-1 lgtablet:grid-cols-3 gap-6">
+              {          
+                campaignSeries.map((campaign, index) => (
+                  <>
+                    <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                      <div className="bg-gray-200 h-64 flex items-center justify-center">
+                        <span className="text-gray-500"> {campaign.title} </span>
+                      </div>
+                      <div className="p-4">
+                        <h3 className="font-medium mb-2"> {campaign.title} </h3>
+                        <p className="text-sm text-gray-600 mb-3"> {campaign.desc} </p>
+                      </div>
+                    </div>
+                  </>
+                ))
+              }
+            </div>
+          </section>
+          :
+          null
+        }
+        
 
         {/* Client Testing */}
         <section className="mb-16">

@@ -70,6 +70,12 @@ export const projectData: ProjectInfoProp[] = [
       desktopView: "",
       tabView: "",
       mobView: "",
+      campaignSeries: [
+        {id: 1, img: "Responsive", title: "", desc: "",}, 
+        {id: 2, img: "Dark Mode", title: "", desc: "",}, 
+        {id: 3, img: "MJML", title: "", desc: "",}, 
+        {id: 4, img: "Interactive", title: "", desc: "",},
+      ],
       gmail: "",
       outlook: "",
       apple: "",
