@@ -1,5 +1,72 @@
 import { ProjectInfoProp } from "./types";
 
+//Empty dataset to show the structure of the content
+//optional modules are, well, optional.
+//Only use them if the project has that field
+//this may be expanded/change as projects grow
+//to accomodate landing page and email automation flows
+// 13-03-25 optional modules are campaignSeries and modularComp
+
+/* 
+    {
+      id: 2,
+      slug: "",
+      title: "",
+      tags: [
+        {id: 1, tag: ""}, 
+        {id: 2, tag: ""}, 
+        {id: 3, tag: ""}, 
+        {id: 4, tag: ""},
+        {id: 5, tag: ""},
+      ],
+      desc: "",
+      projectOverv: {
+          challenge: "",
+          challengeList: 
+              `<li></li>`,
+          solution: "",
+          solutionList: 
+              `<li>Bold, attention-grabbing hero sections with product imagery</li>`
+      },
+      oriDesign: "",
+      htmlImp: "",
+      desktopView: "",
+      tabView: "",
+      mobView: "",
+      campaignSeries: [
+        {id: 1, img: "", title: "", desc: "",}, 
+        {id: 2, img: "", title: "", desc: "",}, 
+        {id: 3, img: "", title: "", desc: "",}, 
+        {id: 4, img: "", title: "", desc: "",},
+      ],
+      modularComp: {
+        headerComps: [
+          { id: 1, comp: ""},
+          { id: 2, comp: ""},
+          { id: 3, comp: ""},
+        ],
+        contentComps: [
+          { id: 1, comp: ""},
+          { id: 2, comp: ""},
+          { id: 3, comp: ""},
+        ],
+        footerComps: [
+          { id: 1, comp: ""},
+          { id: 2, comp: ""},
+          { id: 3, comp: ""},
+        ],
+        code: ``,
+      },
+      gmail: "",
+      outlook: "",
+      apple: "",
+      alltest: "",
+      ctaTitle: "",
+      ctaCopy: ""
+  },
+
+*/
+
 export const projectData: ProjectInfoProp[] = [
     {
         id: 1,
@@ -77,24 +144,6 @@ export const projectData: ProjectInfoProp[] = [
         {id: 4, img: "Interactive", title: `I'm me part 4
           `, desc: "",},
       ],
-      modularComp: {
-        headerComps: [
-          { id: 1, comp: "A"},
-          { id: 2, comp: "B"},
-          { id: 3, comp: "C"},
-        ],
-        contentComps: [
-          { id: 1, comp: "A"},
-          { id: 2, comp: "B"},
-          { id: 3, comp: "C"},
-        ],
-        footerComps: [
-          { id: 1, comp: "A"},
-          { id: 2, comp: "B"},
-          { id: 3, comp: "C"},
-        ],
-        code: ``,
-      },
       gmail: "",
       outlook: "",
       apple: "",
