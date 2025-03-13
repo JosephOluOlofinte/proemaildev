@@ -71,10 +71,11 @@ export const projectData: ProjectInfoProp[] = [
       tabView: "",
       mobView: "",
       campaignSeries: [
-        {id: 1, img: "Responsive", title: "", desc: "",}, 
+        {id: 1, img: "Responsive", title: "I'm me", desc: "Introducing seasonal spice blends and limited edition products",}, 
         {id: 2, img: "Dark Mode", title: "", desc: "",}, 
         {id: 3, img: "MJML", title: "", desc: "",}, 
-        {id: 4, img: "Interactive", title: "", desc: "",},
+        {id: 4, img: "Interactive", title: `I'm me part 4
+          `, desc: "",},
       ],
       gmail: "",
       outlook: "",
