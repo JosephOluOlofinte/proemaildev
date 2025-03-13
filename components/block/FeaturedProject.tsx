@@ -1,8 +1,11 @@
 import { Fragment } from "react"
 import { FeaturedProjectProp } from "@/lib/types"
+import Link from "next/link"
+import Image from "next/image"
 
 
 const FeaturedProject: React.FC<FeaturedProjectProp> = ({
+    slug,
     imgPreview,
     title,
     desc,
@@ -12,9 +15,10 @@ const FeaturedProject: React.FC<FeaturedProjectProp> = ({
 }) => {
   return (
     <Fragment>
+      <Link href={slug}>
         <div className="bg-white rounded-lg overflow-hidden shadow-md">
-            <div className="h-64 bg-gray-200 relative">
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500"> {imgPreview} </div>
+            <div className="h-64 overflow-hidden bg-gray-200 relative">
+              <Image src={imgPreview} className="absolute inset-0 flex items-center justify-center text-gray-500" alt={title} />
             </div>
             <div className="p-4">
               <h3 className="font-bold text-lg mb-2"> {title} </h3>
@@ -26,6 +30,7 @@ const FeaturedProject: React.FC<FeaturedProjectProp> = ({
               </div>
             </div>
         </div>
+      </Link>
     </Fragment>
   )
 }

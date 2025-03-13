@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 
 
 
@@ -79,7 +80,8 @@ export type ProjectInfoProp = {
 // type declaration for homepage featured projects and 
 // /projects page
 export type FeaturedProjectProp = {
-    imgPreview: string;
+    slug: string;
+    imgPreview: StaticImageData;
     title: string;
     desc: string;
     tags?: Tags[];
