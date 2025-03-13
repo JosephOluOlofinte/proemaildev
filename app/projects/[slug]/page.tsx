@@ -1,5 +1,5 @@
 
-import { projectData } from "@/lib/emailProjectsData";
+import { emailProjectData } from "@/lib/emailProjectsData";
 import ProjectInfoCard from '@/components/block/ProjectInfoCard';
 
 interface projectProps {
@@ -13,7 +13,7 @@ const projectInfo = async (props: projectProps) => {
 
   const { slug } = params;
 
-  const data = projectData.find((item) => item.slug === slug)
+  const data = emailProjectData.find((item) => item.slug === slug)
 
   return data ? <ProjectInfoCard {...data} /> : 
   <>

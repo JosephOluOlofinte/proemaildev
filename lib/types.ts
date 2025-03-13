@@ -10,7 +10,8 @@ export type Buttontype = "button" | "submit" | "reset"
 
 export type ButtonProps = {
     text?: string; 
-    url?: string;
+    inUrl?: string;
+    exUrl?: string;
     variant?: ButtonVariant;
     size?: ButtonSize; 
     type?: Buttontype;

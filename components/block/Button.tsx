@@ -11,7 +11,8 @@ import { ButtonSize } from '@/lib/types';
 
 const Button: React.FC<ButtonProps> = ({
     text,
-    url ="",
+    inUrl ="",
+    exUrl ="",
     variant = "primary",
     size = "medium",
     type = "button",
@@ -47,11 +48,24 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <>
-    <Link href={url}>
-        <button type={type} onClick={onClick} className={styles} disabled={isLoading} {...rest}> 
-            {isLoading ? "Loading..." : children || text} 
-        </button>
-    </Link>
+    { 
+        inUrl ? 
+            <Link href={inUrl}>
+                <button type={type} onClick={onClick} className={styles} disabled={isLoading} {...rest}> 
+                    {isLoading ? "Loading..." : children || text} 
+                </button>
+            </Link>
+        : exUrl ?
+            <a href={exUrl}>
+                <button type={type} onClick={onClick} className={styles} disabled={isLoading} {...rest}> 
+                    {isLoading ? "Loading..." : children || text} 
+                </button>
+            </a>
+        :
+                <button type={type} onClick={onClick} className={styles} disabled={isLoading} {...rest}> 
+                    {isLoading ? "Loading..." : children || text} 
+                </button>            
+    }
   </>
   )
 }

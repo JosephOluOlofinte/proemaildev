@@ -12,7 +12,7 @@ const Hero = () => {
           <p className="text-xl mb-14 max-w-[650px]">I specialize in crafting pixel-perfect HTML email templates that are responsive, accessible, and cross-client compatible.</p>
           <div className='grid grid-cols-2 gap-[15px] max-w-[620px]'>
             <Button text="View My Work" size="large" className='w-full' />
-            <Button text="Contact Me" size="large" variant="secondary" className='w-full' />
+            <Button text="Contact Me" size="large" variant="secondary" inUrl="mailto:josepholuolofinte@gmail.com?subject=Email%20template%20development%20services&body=Hey%20Joseph.%20I'd%20like%20to%20chat%20about%20your%20HTML%20email%20development%20services.%0A%0ASpecifically%2C%20I'm%20wondering%20if%20you%20can%20help%20with" className='w-full' />
           </div>
           
         </div>

@@ -1,6 +1,7 @@
 
 
 import { ProjectInfoProp } from "@/lib/types"
+import Button from "./Button"
 
 
 const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
@@ -251,7 +252,9 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           <p className="text-lg mb-6 max-w-2xl mx-auto">
             {ctaCopy}
           </p>
-          <button className="bg-white text-indigo-700 px-6 py-3 rounded-md font-medium">Let&apos;s Work Together</button>
+
+          <Button text="Let's Work Together" size="large" className="text-indigo-700 border-0" exUrl="mailto:josepholuolofinte@gmail.com?subject=Email%20template%20development%20services&body=Hey%20Joseph.%20I'd%20like%20to%20chat%20about%20your%20HTML%20email%20development%20services.%0A%0ASpecifically%2C%20I'm%20wondering%20if%20you%20can%20help%20with" />
+
         </section>
         </main>
       </div>

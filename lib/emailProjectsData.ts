@@ -67,7 +67,7 @@ import { ProjectInfoProp } from "./types";
 
 */
 
-export const projectData: ProjectInfoProp[] = [
+export const emailProjectData: ProjectInfoProp[] = [
     {
         id: 1,
         slug: "e-commerce-seasonal-campaign",
