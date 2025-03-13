@@ -77,6 +77,24 @@ export const projectData: ProjectInfoProp[] = [
         {id: 4, img: "Interactive", title: `I'm me part 4
           `, desc: "",},
       ],
+      modularComp: {
+        headerComps: [
+          { id: 1, comp: "A"},
+          { id: 2, comp: "B"},
+          { id: 3, comp: "C"},
+        ],
+        contentComps: [
+          { id: 1, comp: "A"},
+          { id: 2, comp: "B"},
+          { id: 3, comp: "C"},
+        ],
+        footerComps: [
+          { id: 1, comp: "A"},
+          { id: 2, comp: "B"},
+          { id: 3, comp: "C"},
+        ],
+        code: ``,
+      },
       gmail: "",
       outlook: "",
       apple: "",

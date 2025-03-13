@@ -5,7 +5,7 @@ import { ProjectInfoProp } from "@/lib/types"
 
 const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
     title, tags, desc, projectOverv, oriDesign, htmlImp,
-    desktopView, tabView, mobView, campaignSeries, gmail, outlook, apple, alltest, ctaTitle, ctaCopy
+    desktopView, tabView, mobView, campaignSeries, modularComp, gmail, outlook, apple, alltest, ctaTitle, ctaCopy
 }) => {
   return (
     <>
@@ -97,7 +97,6 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
         </section>
 
         {/* Email suite display */}
-
         {
           campaignSeries ?
           <section className="mb-16">
@@ -123,6 +122,81 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           :
           null
         }
+
+        {/* Component Library */}
+        {
+          modularComp ?
+          <section className="mb-16 bg-white rounded-lg shadow-md p-8">
+            <h2 className="text-2xl font-bold mb-6">Modular Component System</h2>
+            <p className="text-gray-700 mb-6">
+              To ensure consistency and maintainability, I developed a library of reusable components that could be assembled in different combinations to create each template.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              <div className="border rounded p-4">
+                <h3 className="font-medium mb-2">Header Components</h3>
+                {
+                  modularComp.headerComps.map((comp, index) => (
+                    <>
+                      <ul key={index} className="text-sm text-gray-600 space-y-1">
+                        <li> { comp.comp } </li>
+                      </ul>
+                    </>
+                  ))
+                }
+                
+              </div>
+              <div className="border rounded p-4">
+                <h3 className="font-medium mb-2">Content Components</h3>
+                {
+                  modularComp.contentComps.map((comp, index) => (
+                    <>
+                      <ul key={index} className="text-sm text-gray-600 space-y-1">
+                        <li> { comp.comp } </li>
+                      </ul>
+                    </>
+                  ))
+                }
+              </div>
+              <div className="border rounded p-4">
+                <h3 className="font-medium mb-2">Footer Components</h3>
+                {
+                  modularComp.footerComps.map((comp, index) => (
+                    <>
+                      <ul key={index} className="text-sm text-gray-600 space-y-1">
+                        <li> { comp.comp } </li>
+                      </ul>
+                    </>
+                  ))
+                }
+              </div>
+            </div>
+            <div className="bg-gray-50 p-4 rounded border">
+              <pre className="text-sm text-gray-800 overflow-x-auto">
+                <code>
+                  {`<!-- Example of component-based structure -->
+                  <module name="header">
+                    <!-- Logo and branding elements -->
+                  </module>
+
+                  <module name="transactionSummary" data-type="{{transactionType}}">
+                    <!-- Dynamic transaction details -->
+                  </module>
+
+                  <module name="ctaButton" url="{{actionUrl}}" text="{{actionText}}">
+                    <!-- Bulletproof button component -->
+                  </module>
+
+                  <module name="footer" locale="{{userLocale}}">
+                    <!-- Localized footer content -->
+                  </module>`}
+                </code>
+              </pre>
+            </div>
+          </section>
+          :
+          null
+        }
+        
         
 
         {/* Client Testing */}

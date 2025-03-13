@@ -1,5 +1,5 @@
 import FeaturedProject from '@/components/block/FeaturedProject'
-import React, { Fragment } from 'react'
+import { Fragment } from 'react'
 
 const ProjectSlider = () => {
   return (

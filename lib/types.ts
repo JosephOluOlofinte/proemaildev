@@ -43,6 +43,10 @@ export type CampaignSeries = {
     img: string;
 }
 
+export type ModularComps = {
+    id: number;
+    comp: string;
+}
 
 export type ProjectInfoProp = {
     id: number;
@@ -57,6 +61,12 @@ export type ProjectInfoProp = {
     tabView: string;
     mobView: string;
     campaignSeries?: CampaignSeries[];
+    modularComp?: {
+        headerComps: ModularComps[];
+        contentComps: ModularComps[];
+        footerComps: ModularComps[];
+        code: string;
+    };
     gmail: string;
     outlook: string;
     apple: string;

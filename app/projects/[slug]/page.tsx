@@ -1,5 +1,5 @@
 
-import { projectData } from "@/lib/data";
+import { projectData } from "@/lib/emailProjectsData";
 import ProjectInfoCard from '@/components/block/ProjectInfoCard';
 
 interface projectProps {
