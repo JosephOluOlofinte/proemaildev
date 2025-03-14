@@ -2,6 +2,7 @@
 
 import { ProjectInfoProp } from "@/lib/types"
 import Button from "./Button"
+import Image from "next/image"
 
 
 const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
@@ -79,19 +80,19 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="font-medium mb-4">Desktop View</h3>
               <div className="bg-gray-200 h-80 w-full flex items-center justify-center">
-                <span className="text-gray-500"> {desktopView} </span>
+                <span className="text-gray-500"> <Image src={desktopView} alt={title} width={1567} height={2635} layout="intrinsic" />  </span>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="font-medium mb-4">Tablet View</h3>
               <div className="bg-gray-200 h-80 w-full flex items-center justify-center">
-                <span className="text-gray-500"> {tabView} </span>
+                <span className="text-gray-500"> <Image src={tabView} alt={title} width={1567} height={2635} layout="intrinsic" />  </span>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="font-medium mb-4">Mobile View</h3>
               <div className="bg-gray-200 h-80 w-full flex items-center justify-center">
-                <span className="text-gray-500"> {mobView} </span>
+                <span className="text-gray-500"> <Image src={mobView} alt={title} width={1567} height={2635} layout="intrinsic" />  </span>
               </div>
             </div>
           </div>
@@ -107,8 +108,8 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                 campaignSeries.map((campaign, index) => (
                   <>
                     <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                      <div className="bg-gray-200 h-64 flex items-center justify-center">
-                        <span className="text-gray-500"> {campaign.title} </span>
+                      <div className="bg-gray-200 h-fit flex items-center justify-center">
+                       <Image src={campaign.img} alt={campaign.title} width={1567} height={2635} className="min-w-full h-auto" />
                       </div>
                       <div className="p-4">
                         <h3 className="font-medium mb-2"> {campaign.title} </h3>
@@ -139,7 +140,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                   modularComp.headerComps.map((comp, index) => (
                     <>
                       <ul key={index} className="text-sm text-gray-600 space-y-1">
-                        <li> { comp.comp } </li>
+                        <li> {comp.comp} </li>
                       </ul>
                     </>
                   ))
@@ -152,7 +153,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                   modularComp.contentComps.map((comp, index) => (
                     <>
                       <ul key={index} className="text-sm text-gray-600 space-y-1">
-                        <li> { comp.comp } </li>
+                        <li> {comp.comp} </li>
                       </ul>
                     </>
                   ))
@@ -164,7 +165,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                   modularComp.footerComps.map((comp, index) => (
                     <>
                       <ul key={index} className="text-sm text-gray-600 space-y-1">
-                        <li> { comp.comp } </li>
+                        <li> {comp.comp} </li>
                       </ul>
                     </>
                   ))

@@ -42,7 +42,7 @@ export type CampaignSeries = {
     id: number;
     title: string;
     desc: string;
-    img: string;
+    img: StaticImageData | string;
 }
 
 export type ModularComps = {
@@ -59,9 +59,9 @@ export type ProjectInfoProp = {
     projectOverv: ProjectOverview;
     oriDesign: string;
     htmlImp: string;
-    desktopView: string;
-    tabView: string;
-    mobView: string;
+    desktopView: StaticImageData | string;
+    tabView: StaticImageData | string;
+    mobView: StaticImageData | string;
     campaignSeries?: CampaignSeries[];
     modularComp?: {
         headerComps: ModularComps[];

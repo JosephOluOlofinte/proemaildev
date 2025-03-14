@@ -1,4 +1,5 @@
 import { ProjectInfoProp } from "./types";
+import seaSaltsDesk from "../public/images/red-stick-spice/sea-salts-desktop.png"
 
 //Empty dataset to show the structure of the content
 //optional modules are, well, optional.
@@ -93,9 +94,9 @@ export const emailProjectData: ProjectInfoProp[] = [
         },
         oriDesign: "",
         htmlImp: "",
-        desktopView: "",
-        tabView: "",
-        mobView: "",
+        desktopView: seaSaltsDesk,
+        tabView: seaSaltsDesk,
+        mobView: seaSaltsDesk,
         gmail: "",
         outlook: "",
         apple: "",
@@ -134,15 +135,14 @@ export const emailProjectData: ProjectInfoProp[] = [
       },
       oriDesign: "",
       htmlImp: "",
-      desktopView: "",
-      tabView: "",
-      mobView: "",
+      desktopView: seaSaltsDesk,
+      tabView: seaSaltsDesk,
+      mobView: seaSaltsDesk,
       campaignSeries: [
-        {id: 1, img: "Responsive", title: "I'm me", desc: "Introducing seasonal spice blends and limited edition products",}, 
-        {id: 2, img: "Dark Mode", title: "", desc: "",}, 
-        {id: 3, img: "MJML", title: "", desc: "",}, 
-        {id: 4, img: "Interactive", title: `I'm me part 4
-          `, desc: "",},
+        {id: 1, title: "I'm me", desc: "Introducing seasonal spice blends and limited edition products", img: seaSaltsDesk.src}, 
+        {id: 2, title: "", desc: "", img: seaSaltsDesk}, 
+        {id: 3, title: "", desc: "", img: seaSaltsDesk}, 
+        {id: 4, title: `I'm me part 4`, desc: "", img: seaSaltsDesk},
       ],
       gmail: "",
       outlook: "",
