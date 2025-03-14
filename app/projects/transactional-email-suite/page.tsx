@@ -35,7 +35,7 @@ const PortfolioDetailPage = () => {
                 <li>Compliance with WCAG 2.1 accessibility standards</li>
                 <li>Support for 8 different languages with RTL compatibility</li>
                 <li>Consistent rendering across all major email clients</li>
-                <li>Integration with the client's email service provider</li>
+                <li>Integration with the client&apos;s email service provider</li>
               </ul>
             </div>
             <div>
@@ -304,13 +304,14 @@ const PortfolioDetailPage = () => {
               <p className="text-gray-600 text-sm">Reduction in email-related customer support inquiries</p>
             </div>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
+
+          {/* <div className="bg-white rounded-lg shadow-md p-6">
             <h3 className="text-xl font-medium mb-4">Client Feedback</h3>
             <blockquote className="border-l-4 border-indigo-500 pl-4 italic text-gray-700 mb-4">
-              "The new transactional email system has transformed our customer experience. Not only do the emails look more professional, but they've also significantly reduced confusion and support requests. The modular approach has made it easy for our team to manage and update content as needed."
+              "The new transactional email system has transformed our customer experience. Not only do the emails look more professional, but they&apos;ve also significantly reduced confusion and support requests. The modular approach has made it easy for our team to manage and update content as needed."
             </blockquote>
             <p className="text-right text-gray-600">— Director of Customer Experience</p>
-          </div>
+          </div> */}
         </section>
 
         {/* Call To Action */}
@@ -319,7 +320,7 @@ const PortfolioDetailPage = () => {
           <p className="text-lg mb-6 max-w-2xl mx-auto">
             I can help you create a comprehensive system of responsive, accessible transactional emails that enhance your user experience and support your business goals.
           </p>
-          <button className="bg-white text-indigo-700 px-6 py-3 rounded-md font-medium">Let's Work Together</button>
+          <button className="bg-white text-indigo-700 px-6 py-3 rounded-md font-medium">Let&apos;s Work Together</button>
         </section>
       </main>
 
