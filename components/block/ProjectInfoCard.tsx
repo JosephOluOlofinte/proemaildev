@@ -59,14 +59,18 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-6 border-r border-b md:border-b-0">
                 <h3 className="font-medium mb-4">Original Design</h3>
-                <div className="bg-gray-200 h-96 flex items-center justify-center">
-                  <span className="text-gray-500"> {oriDesign} </span>
+                <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                  <span className="text-gray-500">
+                    <Image src={oriDesign} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />
+                  </span>
                 </div>
               </div>
               <div className="p-6 border-b md:border-b-0">
                 <h3 className="font-medium mb-4">HTML Implementation</h3>
-                <div className="bg-gray-200 h-96 flex items-center justify-center">
-                  <span className="text-gray-500"> {htmlImp} </span>
+                <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                  <span className="text-gray-500">
+                    <Image src={htmlImp} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />
+                  </span>
                 </div>
               </div>
             </div>
@@ -79,20 +83,26 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           <div className="grid grid-cols-1 lgtablet:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="font-medium mb-4">Desktop View</h3>
-              <div className="bg-gray-200 h-80 w-full flex items-center justify-center">
-                <span className="text-gray-500"> <Image src={desktopView} alt={title} width={1567} height={2635} layout="intrinsic" />  </span>
+              <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
+                <span className="text-gray-500"> 
+                  <Image src={desktopView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />  
+                  </span>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="font-medium mb-4">Tablet View</h3>
-              <div className="bg-gray-200 h-80 w-full flex items-center justify-center">
-                <span className="text-gray-500"> <Image src={tabView} alt={title} width={1567} height={2635} layout="intrinsic" />  </span>
+              <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
+                <span className="text-gray-500"> 
+                  <Image src={tabView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />  
+                  </span>
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="font-medium mb-4">Mobile View</h3>
-              <div className="bg-gray-200 h-80 w-full flex items-center justify-center">
-                <span className="text-gray-500"> <Image src={mobView} alt={title} width={1567} height={2635} layout="intrinsic" />  </span>
+              <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
+                <span className="text-gray-500"> 
+                  <Image src={mobView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />  
+                </span>
               </div>
             </div>
           </div>
@@ -107,9 +117,9 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
               {          
                 campaignSeries.map((campaign, index) => (
                   <>
-                    <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                      <div className="bg-gray-200 h-fit flex items-center justify-center">
-                       <Image src={campaign.img} alt={campaign.title} width={1567} height={2635} className="min-w-full h-auto" />
+                    <div className="bg-white rounded-lg shadow-md p-6 overflow-hidden">
+                      <div key={index} className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
+                       <Image src={campaign.img} alt={campaign.title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />
                       </div>
                       <div className="p-4">
                         <h3 className="font-medium mb-2"> {campaign.title} </h3>
@@ -206,8 +216,10 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           <h2 className="font-bold mb-6">Email Client Testing</h2>
           <div className="grid grid-cols-1 lgtablet:grid-cols-2 laptop:grid-cols-3 gap-4">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="bg-gray-200 h-48 flex items-center justify-center">
-                <span className="text-gray-500"> {gmail} </span>
+              <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                <span className="text-gray-500"> 
+                  <Image src={gmail} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />  
+                </span>
               </div>
               <div className="p-4">
                 <h3 className="font-medium">Gmail (Web)</h3>
@@ -215,8 +227,10 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
             </div>
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="bg-gray-200 h-48 flex items-center justify-center">
-                <span className="text-gray-500"> {outlook} </span>
+              <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                <span className="text-gray-500">
+                  <Image src={outlook} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />
+                </span>
               </div>
               <div className="p-4">
                 <h3 className="font-medium">Outlook 2019</h3>
@@ -224,8 +238,10 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
             </div>
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="bg-gray-200 h-48 flex items-center justify-center">
-                <span className="text-gray-500"> {apple} </span>
+              <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                <span className="text-gray-500">
+                  <Image src={apple} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />
+                </span>
               </div>
               <div className="p-4">
                 <h3 className="font-medium">Apple Mail</h3>

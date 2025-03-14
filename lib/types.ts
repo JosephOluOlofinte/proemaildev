@@ -57,8 +57,8 @@ export type ProjectInfoProp = {
     tags: Tags[];
     desc: string;
     projectOverv: ProjectOverview;
-    oriDesign: string;
-    htmlImp: string;
+    oriDesign: StaticImageData | string;
+    htmlImp: StaticImageData | string;
     desktopView: StaticImageData | string;
     tabView: StaticImageData | string;
     mobView: StaticImageData | string;
@@ -69,9 +69,9 @@ export type ProjectInfoProp = {
         footerComps: ModularComps[];
         code: string;
     };
-    gmail: string;
-    outlook: string;
-    apple: string;
+    gmail: StaticImageData | string;
+    outlook: StaticImageData | string;
+    apple: StaticImageData | string;
     alltest: string;
     ctaTitle: string;
     ctaCopy: string;
@@ -81,7 +81,7 @@ export type ProjectInfoProp = {
 // /projects page
 export type FeaturedProjectProp = {
     slug: string;
-    imgPreview: StaticImageData;
+    imgPreview: StaticImageData | string;
     title: string;
     desc: string;
     tags?: Tags[];

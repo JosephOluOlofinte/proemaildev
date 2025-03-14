@@ -92,14 +92,14 @@ export const emailProjectData: ProjectInfoProp[] = [
                 <li>CSS targeting for dark mode adjustments</li>
                 <li>Progressive enhancement for interactive elements</li>`
         },
-        oriDesign: "",
-        htmlImp: "",
+        oriDesign: seaSaltsDesk,
+        htmlImp: seaSaltsDesk,
         desktopView: seaSaltsDesk,
         tabView: seaSaltsDesk,
         mobView: seaSaltsDesk,
-        gmail: "",
-        outlook: "",
-        apple: "",
+        gmail: seaSaltsDesk,
+        outlook: seaSaltsDesk,
+        apple: seaSaltsDesk,
         alltest: "",
         ctaTitle: "Need similar results for your email campaigns?",
         ctaCopy: "I can help you create responsive, accessible HTML emails that look great across all major email clients."
@@ -133,20 +133,20 @@ export const emailProjectData: ProjectInfoProp[] = [
               <li>Modular content blocks for featured products</li>
               <li>Custom CTA buttons optimized for click-through rates</li>`
       },
-      oriDesign: "",
-      htmlImp: "",
+      oriDesign: seaSaltsDesk,
+      htmlImp: seaSaltsDesk,
       desktopView: seaSaltsDesk,
       tabView: seaSaltsDesk,
       mobView: seaSaltsDesk,
       campaignSeries: [
-        {id: 1, title: "I'm me", desc: "Introducing seasonal spice blends and limited edition products", img: seaSaltsDesk.src}, 
+        {id: 1, title: "I'm me", desc: "Introducing seasonal spice blends and limited edition products", img: seaSaltsDesk}, 
         {id: 2, title: "", desc: "", img: seaSaltsDesk}, 
         {id: 3, title: "", desc: "", img: seaSaltsDesk}, 
         {id: 4, title: `I'm me part 4`, desc: "", img: seaSaltsDesk},
       ],
-      gmail: "",
-      outlook: "",
-      apple: "",
+      gmail: seaSaltsDesk,
+      outlook: seaSaltsDesk,
+      apple: seaSaltsDesk,
       alltest: "",
       ctaTitle: "Need engaging promotional emails for your products?",
       ctaCopy: "I can help you create visually stunning, high-converting email campaigns that showcase your products and drive customer engagement."
