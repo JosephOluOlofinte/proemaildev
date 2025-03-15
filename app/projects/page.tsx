@@ -45,7 +45,6 @@ const page = () => {
             </div>
           </section>
         </Fragment>
-
   )
 }
 

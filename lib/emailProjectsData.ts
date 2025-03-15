@@ -1,5 +1,6 @@
 import { ProjectInfoProp } from "./types";
 import seaSaltsDesk from "../public/images/red-stick-spice/sea-salts-desktop.png"
+import seaSaltsMob from "../public/images/red-stick-spice/sea-salts-mob.png"
 
 //Empty dataset to show the structure of the content
 //optional modules are, well, optional.
@@ -96,7 +97,7 @@ export const emailProjectData: ProjectInfoProp[] = [
         htmlImp: seaSaltsDesk,
         desktopView: seaSaltsDesk,
         tabView: seaSaltsDesk,
-        mobView: seaSaltsDesk,
+        mobView: seaSaltsMob,
         gmail: seaSaltsDesk,
         outlook: seaSaltsDesk,
         apple: seaSaltsDesk,
@@ -137,7 +138,7 @@ export const emailProjectData: ProjectInfoProp[] = [
       htmlImp: seaSaltsDesk,
       desktopView: seaSaltsDesk,
       tabView: seaSaltsDesk,
-      mobView: seaSaltsDesk,
+      mobView: seaSaltsMob,
       campaignSeries: [
         {id: 1, title: "I'm me", desc: "Introducing seasonal spice blends and limited edition products", img: seaSaltsDesk}, 
         {id: 2, title: "", desc: "", img: seaSaltsDesk}, 
