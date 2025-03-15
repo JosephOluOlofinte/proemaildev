@@ -6,7 +6,7 @@ import Image from "next/image"
 
 
 const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
-    title, tags, desc, projectOverv, oriDesign, htmlImp,
+    title, tags, desc, url, projectOverv, oriDesign, htmlImp,
     desktopView, tabView, mobView, campaignSeries, modularComp, gmail, outlook, apple, alltest, ctaTitle, ctaCopy
 }) => {
   return (
@@ -23,12 +23,17 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
               <div key={index} className="">
                 <span className="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">{tag.tag} </span>
               </div>
-
             ))}
           </div>
           <p className="text-lg text-gray-700 max-w-3xl">
-           {desc}          
+           {desc}                     
           </p>
+          { url ? 
+
+            (<><br /> <a href={url} className="text-indigo-700 border-0">View project on the web</a></>)
+            :
+            null
+          }
         </div>
 
         {/* Project Overview */}
@@ -61,7 +66,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                 <h3 className="font-medium mb-4">Original Design</h3>
                 <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
                   <span className="text-gray-500">
-                    <Image src={oriDesign} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "500px", height: "auto"}} />
+                    <Image src={oriDesign} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "500px", height: "auto"}} />
                   </span>
                 </div>
               </div>
@@ -69,7 +74,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                 <h3 className="font-medium mb-4">HTML Implementation</h3>
                 <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
                   <span className="text-gray-500">
-                    <Image src={htmlImp} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "500px", height: "auto"}} />
+                    <Image src={htmlImp} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "500px", height: "auto"}} />
                   </span>
                 </div>
               </div>
@@ -85,27 +90,29 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
               <h3 className="font-medium mb-4">Desktop View</h3>
               <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
                 <span className="text-gray-500"> 
-                  <Image src={desktopView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />  
+                  <Image src={desktopView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "350px", height: "auto"}} />  
                   </span>
               </div>
             </div>
+
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="font-medium mb-4">Tablet View</h3>
               <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
                 <span className="text-gray-500"> 
-                  <Image src={tabView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />  
+                  <Image src={tabView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "350px", height: "auto"}} />  
                   </span>
               </div>
             </div>
+
             <div className="bg-white rounded-lg shadow-md p-6">
               <h3 className="font-medium mb-4">Mobile View</h3>
               <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
                 <span className="text-gray-500"> 
-                  <Image src={mobView} alt={title} width={0} height={0} sizes="100vw" style={{width: "200px", height: "auto"}} />  
+                  <Image src={mobView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "150px", maxWidth: "220px", height: "auto"}} />  
                 </span>
               </div>
             </div>
-          </div>
+          </div> {/* End of grid */}
         </section>
 
         {/* Email suite display */}

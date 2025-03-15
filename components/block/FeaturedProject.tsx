@@ -15,8 +15,9 @@ const FeaturedProject: React.FC<FeaturedProjectProp> = ({
 }) => {
   return (
     <Fragment>
-      <Link href={slug}>
+      
         <div className="bg-white rounded-lg overflow-hidden shadow-md">
+          <Link href={slug}>
             <div className="h-64 overflow-hidden bg-gray-200 relative">
               <Image src={imgPreview} className="absolute inset-0 flex items-center justify-center text-gray-500" alt={title} />
             </div>
@@ -29,8 +30,9 @@ const FeaturedProject: React.FC<FeaturedProjectProp> = ({
                 <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded"> {tag3} </span>
               </div>
             </div>
+          </Link>
         </div>
-      </Link>
+      
     </Fragment>
   )
 }

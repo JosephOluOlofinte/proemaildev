@@ -118,6 +118,7 @@ export const emailProjectData: ProjectInfoProp[] = [
         {id: 5, tag: "Campaign Series"},
       ],
       desc: "A series of vibrant and engaging email templates for Red Stick Spice Co., containing 4 emails and focusing on promoting their premium spice products. The goal was to create visually appealing, user-friendly designs that effectively communicate the brand's message and drive customer engagement.",
+      url: "https://josepholuolofinte.github.io/sea-salts/",
       projectOverv: {
           challenge: "Create a cohesive series of promotional emails that would showcase Red Stick Spice Co.'s premium products while maintaining their artisanal brand identity and driving sales through visually compelling content.",
           challengeList: 

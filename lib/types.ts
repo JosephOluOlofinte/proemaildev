@@ -56,6 +56,7 @@ export type ProjectInfoProp = {
     title: string;
     tags: Tags[];
     desc: string;
+    url?: string;
     projectOverv: ProjectOverview;
     oriDesign: StaticImageData | string;
     htmlImp: StaticImageData | string;
