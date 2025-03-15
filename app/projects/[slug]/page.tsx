@@ -7,9 +7,9 @@ interface projectProps {
     slug: string
   }>;
 }
-const ProjectInfo = async (props: projectProps) => {
+const ProjectInfo = async ({ params }: projectProps) => {
 
-  const { slug } = await props.params;
+  const { slug } = await params;
 
   const data = emailProjectData.find((item) => item.slug === slug)
 
