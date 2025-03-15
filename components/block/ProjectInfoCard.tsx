@@ -101,7 +101,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
               <h3 className="font-medium mb-4">Mobile View</h3>
               <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
                 <span className="text-gray-500"> 
-                  <Image src={mobView} alt={title} width={0} height={0} sizes="100vw" style={{width: "300px", height: "auto"}} />  
+                  <Image src={mobView} alt={title} width={0} height={0} sizes="100vw" style={{width: "200px", height: "auto"}} />  
                 </span>
               </div>
             </div>
