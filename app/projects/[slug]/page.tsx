@@ -7,11 +7,9 @@ interface projectProps {
     slug: string
   }>;
 }
+const ProjectInfo = async (props: projectProps) => {
 
-const projectInfo = async (props: projectProps) => {
-  const params = await props.params;
-
-  const { slug } = params;
+  const { slug } = await props.params;
 
   const data = emailProjectData.find((item) => item.slug === slug)
 
@@ -24,4 +22,5 @@ const projectInfo = async (props: projectProps) => {
   </>
 }
 
-export default projectInfo
+
+export default ProjectInfo;

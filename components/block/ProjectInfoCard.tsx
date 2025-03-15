@@ -116,17 +116,15 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
             <div className="grid grid-cols-1 lgtablet:grid-cols-3 gap-6">
               {          
                 campaignSeries.map((campaign, index) => (
-                  <>
-                    <div className="bg-white rounded-lg shadow-md p-6 overflow-hidden">
-                      <div key={index} className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
-                       <Image src={campaign.img} alt={campaign.title} width={0} height={0} sizes="100vw" style={{minWidth: "750px", height: "auto"}} />
+                    <div  key={index} className="bg-white rounded-lg shadow-md p-6 overflow-hidden">
+                      <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
+                       <Image src={campaign.img} alt={campaign.title} width={0} height={0} sizes="100vw" style={{minWidth: "705px", height: "auto"}} />
                       </div>
                       <div className="p-4">
                         <h3 className="font-medium mb-2"> {campaign.title} </h3>
                         <p className="text-sm text-gray-600 mb-3"> {campaign.desc} </p>
                       </div>
                     </div>
-                  </>
                 ))
               }
             </div>
