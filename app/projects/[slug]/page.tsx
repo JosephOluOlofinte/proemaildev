@@ -1,3 +1,4 @@
+export {};
 
 import { emailProjectData } from "@/lib/emailProjectsData";
 import ProjectInfoCard from '@/components/block/ProjectInfoCard';
