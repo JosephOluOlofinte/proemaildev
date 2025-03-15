@@ -1,6 +1,10 @@
 import { ProjectInfoProp } from "./types";
-import seaSaltsDesk from "../public/images/red-stick-spice/sea-salts-desktop.png"
-import seaSaltsMob from "../public/images/red-stick-spice/sea-salts-mob.png"
+import rssSeaSaltsDesk from "../public/images/red-stick-spice/sea-salts-desktop.png"
+import rssSeaSaltsMob from "../public/images/red-stick-spice/sea-salts-mob.png"
+import rss10Off from "../public/images/red-stick-spice/rss-10-off.png"
+import rssFleurDeSel from "../public/images/red-stick-spice/rss-fluer-de-sel.png"
+import rssGourmetFeast from "../public/images/red-stick-spice/rss-gourmet-feast.png"
+import rssOriginalDesign from "../public/images/red-stick-spice/sea-salts-design.png"
 
 //Empty dataset to show the structure of the content
 //optional modules are, well, optional.
@@ -93,14 +97,14 @@ export const emailProjectData: ProjectInfoProp[] = [
                 <li>CSS targeting for dark mode adjustments</li>
                 <li>Progressive enhancement for interactive elements</li>`
         },
-        oriDesign: seaSaltsDesk,
-        htmlImp: seaSaltsDesk,
-        desktopView: seaSaltsDesk,
-        tabView: seaSaltsDesk,
-        mobView: seaSaltsMob,
-        gmail: seaSaltsDesk,
-        outlook: seaSaltsDesk,
-        apple: seaSaltsDesk,
+        oriDesign: rssSeaSaltsDesk,
+        htmlImp: rssSeaSaltsDesk,
+        desktopView: rssSeaSaltsDesk,
+        tabView: rssSeaSaltsDesk,
+        mobView: rssSeaSaltsDesk,
+        gmail: rssSeaSaltsDesk,
+        outlook: rssSeaSaltsDesk,
+        apple: rssSeaSaltsDesk,
         alltest: "",
         ctaTitle: "Need similar results for your email campaigns?",
         ctaCopy: "I can help you create responsive, accessible HTML emails that look great across all major email clients."
@@ -135,20 +139,20 @@ export const emailProjectData: ProjectInfoProp[] = [
               <li>Modular content blocks for featured products</li>
               <li>Custom CTA buttons optimized for click-through rates</li>`
       },
-      oriDesign: seaSaltsDesk,
-      htmlImp: seaSaltsDesk,
-      desktopView: seaSaltsDesk,
-      tabView: seaSaltsDesk,
-      mobView: seaSaltsMob,
+      oriDesign: rssOriginalDesign,
+      htmlImp: rssSeaSaltsDesk,
+      desktopView: rssSeaSaltsDesk,
+      tabView: rssSeaSaltsDesk,
+      mobView: rssSeaSaltsMob,
       campaignSeries: [
-        {id: 1, title: "I'm me", desc: "Introducing seasonal spice blends and limited edition products", img: seaSaltsDesk}, 
-        {id: 2, title: "", desc: "", img: seaSaltsDesk}, 
-        {id: 3, title: "", desc: "", img: seaSaltsDesk}, 
-        {id: 4, title: `I'm me part 4`, desc: "", img: seaSaltsDesk},
+        {id: 1, title: "I'm me", desc: "Introducing seasonal spice blends and limited edition products", img: rss10Off}, 
+        {id: 2, title: "", desc: "", img: rssGourmetFeast}, 
+        {id: 3, title: "", desc: "", img: rssFleurDeSel}, 
+        {id: 4, title: `I'm me part 4`, desc: "", img: rssSeaSaltsDesk},
       ],
-      gmail: seaSaltsDesk,
-      outlook: seaSaltsDesk,
-      apple: seaSaltsDesk,
+      gmail: rssSeaSaltsDesk,
+      outlook: rssSeaSaltsDesk,
+      apple: rssSeaSaltsDesk,
       alltest: "",
       ctaTitle: "Need engaging promotional emails for your products?",
       ctaCopy: "I can help you create visually stunning, high-converting email campaigns that showcase your products and drive customer engagement."

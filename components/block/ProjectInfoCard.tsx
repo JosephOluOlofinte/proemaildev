@@ -61,12 +61,12 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
         <section className="mb-16">
           <h2 className="font-bold mb-6">Design to Code</h2>
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 lgtablet:grid-cols-2">
               <div className="p-6 border-r border-b md:border-b-0">
                 <h3 className="font-medium mb-4">Original Design</h3>
                 <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
                   <span className="text-gray-500">
-                    <Image src={oriDesign} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "500px", height: "auto"}} />
+                    <Image src={oriDesign} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "400px", height: "auto"}} />
                   </span>
                 </div>
               </div>
