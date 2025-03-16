@@ -58,8 +58,8 @@ export type ProjectInfoProp = {
     desc: string;
     url?: string;
     projectOverv: ProjectOverview;
-    oriDesign: StaticImageData | string;
-    htmlImp: StaticImageData | string;
+    oriDesign?: StaticImageData | string;
+    htmlImp?: StaticImageData | string;
     desktopView: StaticImageData | string;
     tabView: StaticImageData | string;
     mobView: StaticImageData | string;

@@ -4,7 +4,6 @@ import rssSeaSaltsMob from "../public/images/red-stick-spice/sea-salts-mob.png"
 import rss10Off from "../public/images/red-stick-spice/rss-10-off.png"
 import rssFleurDeSel from "../public/images/red-stick-spice/rss-fluer-de-sel.png"
 import rssGourmetFeast from "../public/images/red-stick-spice/rss-gourmet-feast.png"
-import rssOriginalDesign from "../public/images/red-stick-spice/sea-salts-design.png"
 
 //Empty dataset to show the structure of the content
 //optional modules are, well, optional.
@@ -122,7 +121,6 @@ export const emailProjectData: ProjectInfoProp[] = [
         {id: 5, tag: "Campaign Series"},
       ],
       desc: "A series of vibrant and engaging email templates for Red Stick Spice Co., containing 4 emails and focusing on promoting their premium spice products. The goal was to create visually appealing, user-friendly designs that effectively communicate the brand's message and drive customer engagement.",
-      url: "https://josepholuolofinte.github.io/sea-salts/",
       projectOverv: {
           challenge: "Create a cohesive series of promotional emails that would showcase Red Stick Spice Co.'s premium products while maintaining their artisanal brand identity and driving sales through visually compelling content.",
           challengeList: 
@@ -139,16 +137,14 @@ export const emailProjectData: ProjectInfoProp[] = [
               <li>Modular content blocks for featured products</li>
               <li>Custom CTA buttons optimized for click-through rates</li>`
       },
-      oriDesign: rssOriginalDesign,
-      htmlImp: rssSeaSaltsDesk,
       desktopView: rssSeaSaltsDesk,
       tabView: rssSeaSaltsDesk,
       mobView: rssSeaSaltsMob,
       campaignSeries: [
-        {id: 1, title: "I'm me", desc: "Introducing seasonal spice blends and limited edition products", img: rss10Off}, 
-        {id: 2, title: "", desc: "", img: rssGourmetFeast}, 
-        {id: 3, title: "", desc: "", img: rssFleurDeSel}, 
-        {id: 4, title: `I'm me part 4`, desc: "", img: rssSeaSaltsDesk},
+        {id: 1, title: "Email 1", desc: "This email entices new email subscribers to take advantage of the 10% off promo to shop their favorite luxurious seal salt.", img: rss10Off}, 
+        {id: 2, title: "Email 2", desc: "This email invites subscribers to check out the store's collection of sea salts.", img: rssGourmetFeast}, 
+        {id: 3, title: "Email 3", desc: "This email builds on the previous one and takes a step further by introducing the Fleur De Sel (Flor de sal).", img: rssFleurDeSel}, 
+        {id: 4, title: `Email 4`, desc: "This email introduces Red Stick Spice's entire salt collection.", img: rssSeaSaltsDesk},
       ],
       gmail: rssSeaSaltsDesk,
       outlook: rssSeaSaltsDesk,

@@ -58,29 +58,35 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
         </section>
 
         {/* Design Comparison */}
-        <section className="mb-16">
-          <h2 className="font-bold mb-6">Design to Code</h2>
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
-            <div className="grid grid-cols-1 lgtablet:grid-cols-2">
-              <div className="p-6 border-r border-b md:border-b-0">
-                <h3 className="font-medium mb-4">Original Design</h3>
-                <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
-                  <span className="text-gray-500">
-                    <Image src={oriDesign} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "400px", height: "auto"}} />
-                  </span>
+        {
+          oriDesign && htmlImp ?
+          <section className="mb-16">
+            <h2 className="font-bold mb-6">Design to Code</h2>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="grid grid-cols-1 lgtablet:grid-cols-2">
+                <div className="p-6 border-r border-b md:border-b-0">
+                  <h3 className="font-medium mb-4">Original Design</h3>
+                  <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                    <span className="text-gray-500">
+                      <Image src={oriDesign} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "400px", height: "auto"}} />
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <div className="p-6 border-b md:border-b-0">
-                <h3 className="font-medium mb-4">HTML Implementation</h3>
-                <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
-                  <span className="text-gray-500">
-                    <Image src={htmlImp} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "500px", height: "auto"}} />
-                  </span>
+                <div className="p-6 border-b md:border-b-0">
+                  <h3 className="font-medium mb-4">HTML Implementation</h3>
+                  <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                    <span className="text-gray-500">
+                      <Image src={htmlImp} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "500px", height: "auto"}} />
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        :
+        null
+        }
+        
 
         {/* Responsive Views */}
         <section className="mb-16">
@@ -128,7 +134,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                        <Image src={campaign.img} alt={campaign.title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />
                       </div>
                       <div className="p-4">
-                        <h3 className="font-medium mb-2"> {campaign.title} </h3>
+                        <h3 className="mb-3"> {campaign.title} </h3>
                         <p className="text-sm text-gray-600 mb-3"> {campaign.desc} </p>
                       </div>
                     </div>
@@ -219,50 +225,54 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
         {/* Client Testing */}
         <section className="mb-16">
           <h2 className="font-bold mb-6">Email Client Testing</h2>
-          <div className="grid grid-cols-1 lgtablet:grid-cols-2 laptop:grid-cols-3 gap-4">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
-                <span className="text-gray-500"> 
-                  <Image src={gmail} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />  
-                </span>
+          <div className="grid grid-rows-[2] gap-5">
+            <div className="h-fit grid grid-cols-1 laptop:grid-cols-3 gap-4">
+
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="p-4">
+                  <h3>Gmail (Web)</h3>
+                </div>
+                <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                  <span className="text-gray-500"> 
+                    <Image src={gmail} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />  
+                  </span>
+                </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-medium">Gmail (Web)</h3>
+
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="p-4">
+                  <h3>Outlook 2019</h3>
+                </div>
+                <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                  <span className="text-gray-500">
+                    <Image src={outlook} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />
+                  </span>
+                </div>
               </div>
+
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="p-4">
+                  <h3>Apple Mail</h3>
+                </div>
+                <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
+                  <span className="text-gray-500">
+                    <Image src={apple} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />
+                  </span>
+                </div>
+              </div>
+
             </div>
 
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
-                <span className="text-gray-500">
-                  <Image src={outlook} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />
-                </span>
-              </div>
-              <div className="p-4">
-                <h3 className="font-medium">Outlook 2019</h3>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
-                <span className="text-gray-500">
-                  <Image src={apple} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />
-                </span>
-              </div>
-              <div className="p-4">
-                <h3 className="font-medium">Apple Mail</h3>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="bg-white h-fit rounded-lg shadow-md overflow-hidden">
               <div className="bg-gray-200 h-48 flex items-center justify-center">
-                <span className="text-gray-500"> {alltest} </span>
+                <span className="text-gray-500"> {alltest} me </span>
               </div>
               <div className="p-4">
                 <h3 className="font-medium">Full test video</h3>
               </div>
             </div>
-
           </div>
+
           <div className="mt-6 text-right">
             <a href="#" className="text-indigo-600 hover:text-indigo-800">View all email client tests →</a>
           </div>
