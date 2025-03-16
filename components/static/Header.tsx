@@ -2,22 +2,11 @@
 
 import Link from "next/link";
 import { Fragment } from "react"
-import { AiOutlineLinkedin } from "react-icons/ai";
-
 
 const Header = () => {
   return (
     <Fragment>
       <header className="w-full flex flex-col items-center justify-center bg-absoluteWhite">
-        <div className="h-[40px] w-full flex items-center justify-center bg-white97">
-          <div className="w-[85%] h-full flex justify-end">
-            <a href="https://www.linkedin.com/in/joseph-olu" className="h-full flex items-center gap-[6px] font-semibold">
-              <AiOutlineLinkedin size={24} className="" />
-              <p className="leading-none">Connect on LinkedIn</p>
-            </a>
-          </div>        
-        </div>
-
         <div className="w-[90%] tablet:w-[95%] latop:w-[85%] h-[100px] flex items-center justify-between">
           <div>
             <Link href="/">
