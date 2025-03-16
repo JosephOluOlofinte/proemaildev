@@ -126,16 +126,16 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           campaignSeries ?
           <section className="mb-16">
             <h2 className="font-bold mb-6">The Campaign Series</h2>
-            <div className="grid grid-cols-1 lgtablet:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 laptop:grid-cols-3 gap-6">
               {          
                 campaignSeries.map((campaign, index) => (
                     <div  key={index} className="bg-white rounded-lg shadow-md p-6 overflow-hidden">
-                      <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
-                       <Image src={campaign.img} alt={campaign.title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />
-                      </div>
-                      <div className="p-4">
+                      <div className="p-4 h-[150px]">
                         <h3 className="mb-3"> {campaign.title} </h3>
                         <p className="text-sm text-gray-600 mb-3"> {campaign.desc} </p>
+                      </div>
+                      <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
+                       <Image src={campaign.img} alt={campaign.title} width={0} height={0} sizes="100vw" style={{minWidth: "300px", height: "auto"}} />
                       </div>
                     </div>
                 ))
@@ -225,7 +225,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
         {/* Client Testing */}
         <section className="mb-16">
           <h2 className="font-bold mb-6">Email Client Testing</h2>
-          <div className="grid grid-rows-[2] gap-5">
+          <div className="grid grid-rows-[2] gap-8">
             <div className="h-fit grid grid-cols-1 laptop:grid-cols-3 gap-4">
 
               <div className="bg-white rounded-lg shadow-md overflow-hidden">

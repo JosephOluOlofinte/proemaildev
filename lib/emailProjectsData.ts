@@ -144,7 +144,7 @@ export const emailProjectData: ProjectInfoProp[] = [
         {id: 1, title: "Email 1", desc: "This email entices new email subscribers to take advantage of the 10% off promo to shop their favorite luxurious seal salt.", img: rss10Off}, 
         {id: 2, title: "Email 2", desc: "This email invites subscribers to check out the store's collection of sea salts.", img: rssGourmetFeast}, 
         {id: 3, title: "Email 3", desc: "This email builds on the previous one and takes a step further by introducing the Fleur De Sel (Flor de sal).", img: rssFleurDeSel}, 
-        {id: 4, title: `Email 4`, desc: "This email introduces Red Stick Spice's entire salt collection.", img: rssSeaSaltsDesk},
+        {id: 4, title: `Email 4`, desc: "This email introduces Red Stick Spice's entire sea salt collection, providing information about each one.", img: rssSeaSaltsDesk},
       ],
       gmail: rssSeaSaltsDesk,
       outlook: rssSeaSaltsDesk,
