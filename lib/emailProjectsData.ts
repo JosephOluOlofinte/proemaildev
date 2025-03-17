@@ -168,6 +168,7 @@ export const emailProjectData: ProjectInfoProp[] = [
         {id: 4, tag: "Welcome email"},
       ],
       desc: "",
+      url: "https://josepholuolofinte.github.io/capture-welcome-email/",
       projectOverv: {
           challenge: "",
           challengeList: 
