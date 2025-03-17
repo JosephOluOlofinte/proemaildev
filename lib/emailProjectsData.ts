@@ -4,6 +4,9 @@ import rssSeaSaltsMob from "../public/images/red-stick-spice/sea-salts-mob.png"
 import rss10Off from "../public/images/red-stick-spice/rss-10-off.png"
 import rssFleurDeSel from "../public/images/red-stick-spice/rss-fluer-de-sel.png"
 import rssGourmetFeast from "../public/images/red-stick-spice/rss-gourmet-feast.png"
+import captureDesktop from "@/public/images/capture/capture-desktop.png"
+import captureMob from "@/public/images/capture/capture-mob.png"
+import captureDesign from "@/public/images/capture/capture-design.png"
 
 //Empty dataset to show the structure of the content
 //optional modules are, well, optional.
@@ -152,6 +155,38 @@ export const emailProjectData: ProjectInfoProp[] = [
       alltest: "",
       ctaTitle: "Need engaging promotional emails for your products?",
       ctaCopy: "I can help you create visually stunning, high-converting email campaigns that showcase your products and drive customer engagement."
-  },
+    },
+
+    {
+      id: 3,
+      slug: "welcome-email-for-capture",
+      title: "Welcome email for Capture",
+      tags: [
+        {id: 1, tag: "HTML"}, 
+        {id: 2, tag: "CSS"}, 
+        {id: 3, tag: "MJML"}, 
+        {id: 4, tag: "Welcome email"},
+      ],
+      desc: "",
+      projectOverv: {
+          challenge: "",
+          challengeList: 
+              `<li></li>`,
+          solution: "",
+          solutionList: 
+              `<li>Bold, attention-grabbing hero sections with product imagery</li>`
+      },
+      oriDesign: captureDesign,
+      htmlImp: captureDesktop,
+      desktopView: captureDesktop,
+      tabView: captureDesktop,
+      mobView: captureMob,
+      gmail: captureDesktop,
+      outlook: captureDesktop,
+      apple: captureDesktop,
+      alltest: "",
+      ctaTitle: "",
+      ctaCopy: ""
+    },
 
 ]

@@ -1,6 +1,7 @@
 import FeaturedProject from '@/components/block/FeaturedProject'
 import { Fragment } from 'react'
 import rss10Off from '@/public/images/red-stick-spice/rss-10-off.png'
+import captureDesktop from '@/public/images/capture/capture-desktop.png'
 
 const ProjectSlider = () => {
   return (
@@ -22,11 +23,11 @@ const ProjectSlider = () => {
           
           {/* Project 2 */}
           <FeaturedProject 
-            slug=''
-            imgPreview={rss10Off} 
-            title='Transactional Email Suite' 
-            desc='Set of transactional emails for SaaS platform' 
-            tag1='Outlook' tag2='Accessible' tag3='Custom' />
+            slug='projects/welcome-email-for-capture'
+            imgPreview={captureDesktop} 
+            title='Welcome Email for Capture' 
+            desc='A single welcome email developement for Capture&apos;s new subscribers.' 
+            tag1='MJML' tag2='Welcome email' tag3='Custom' />
 
           
           {/* Project 3 */}
