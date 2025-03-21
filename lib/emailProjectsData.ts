@@ -190,4 +190,37 @@ export const emailProjectData: ProjectInfoProp[] = [
       ctaCopy: ""
     },
 
+    {
+      id: 4,
+      slug: "welcome-email-for-capture",
+      title: "Welcome email for Capture",
+      tags: [
+        {id: 1, tag: "HTML"}, 
+        {id: 2, tag: "CSS"}, 
+        {id: 3, tag: "MJML"}, 
+        {id: 4, tag: "Welcome email"},
+      ],
+      desc: "",
+      url: "https://josepholuolofinte.github.io/capture-welcome-email/",
+      projectOverv: {
+          challenge: "",
+          challengeList: 
+              `<li></li>`,
+          solution: "",
+          solutionList: 
+              `<li>Bold, attention-grabbing hero sections with product imagery</li>`
+      },
+      oriDesign: captureDesign,
+      htmlImp: captureDesktop,
+      desktopView: captureDesktop,
+      tabView: captureDesktop,
+      mobView: captureMob,
+      gmail: captureDesktop,
+      outlook: captureDesktop,
+      apple: captureDesktop,
+      alltest: "",
+      ctaTitle: "",
+      ctaCopy: ""
+    },
+
 ]
