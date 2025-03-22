@@ -2,6 +2,7 @@ import FeaturedProject from '@/components/block/FeaturedProject'
 import { Fragment } from 'react'
 import rss10Off from '@/public/images/red-stick-spice/rss-10-off.png'
 import captureDesktop from '@/public/images/capture/capture-desktop.png'
+import linguaProUpdateDesk from '@/public/images/lingua/lingua-pro-update-desk.png'
 
 const ProjectSlider = () => {
   return (
@@ -33,7 +34,7 @@ const ProjectSlider = () => {
           {/* Project 3 */}
           <FeaturedProject 
             slug=''
-            imgPreview={rss10Off} 
+            imgPreview={linguaProUpdateDesk} 
             title='Interactive Newsletter' 
             desc='Interactive content with fallbacks for all e-mail clients' 
             tag1='AMP for Email' tag2='Fallbacks' tag3='Animation' />
