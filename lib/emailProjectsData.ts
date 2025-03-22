@@ -76,46 +76,46 @@ import captureDesign from "@/public/images/capture/capture-design.png"
 */
 
 export const emailProjectData: ProjectInfoProp[] = [
-    {
-        id: 1,
-        slug: "e-commerce-seasonal-campaign",
-        title: "E-commerce seasonal campaign",
-        tags: [
-          {id: 1, tag: "Responsive"}, 
-          {id: 2, tag: "Dark Mode"}, 
-          {id: 3, tag: "MJML"}, 
-          {id: 4, tag: "Interactive"},
-        ],
-        desc: "A responsive promotional email campaign for a major retail client, featuring dynamic content, dark mode support, and interactive elements with robust fallbacks.",
-        projectOverv: {
-            challenge: "Create a visually rich promotional email that maintains design integrity across all major email clients while implementing interactive elements where supported.",
-            challengeList: `<li>Support for 40+ email clients including Outlook 2007-2019</li>
-                <li>Mobile-responsive design with text size adjustments</li>
-                <li>Dark mode compatibility</li>
-                <li>Interactive product carousel with fallbacks</li>`,
-            solution: "I developed a hybrid approach using MJML for the base structure while implementing custom code for critical sections requiring specific client support.",
-            solutionList: `<li>Table-based layout with responsive breakpoints</li>
-                <li>VML for Outlook background images</li>
-                <li>CSS targeting for dark mode adjustments</li>
-                <li>Progressive enhancement for interactive elements</li>`
-        },
-        oriDesign: rssSeaSaltsDesk,
-        htmlImp: rssSeaSaltsDesk,
-        desktopView: rssSeaSaltsDesk,
-        tabView: rssSeaSaltsDesk,
-        mobView: rssSeaSaltsDesk,
-        gmail: rssSeaSaltsDesk,
-        outlook: rssSeaSaltsDesk,
-        apple: rssSeaSaltsDesk,
-        alltest: "",
-        ctaTitle: "Need similar results for your email campaigns?",
-        ctaCopy: "I can help you create responsive, accessible HTML emails that look great across all major email clients."
-    },
+    // {
+    //     id: 1,
+    //     slug: "e-commerce-seasonal-campaign",
+    //     title: "E-commerce seasonal campaign",
+    //     tags: [
+    //       {id: 1, tag: "Responsive"}, 
+    //       {id: 2, tag: "Dark Mode"}, 
+    //       {id: 3, tag: "MJML"}, 
+    //       {id: 4, tag: "Interactive"},
+    //     ],
+    //     desc: "A responsive promotional email campaign for a major retail client, featuring dynamic content, dark mode support, and interactive elements with robust fallbacks.",
+    //     projectOverv: {
+    //         challenge: "Create a visually rich promotional email that maintains design integrity across all major email clients while implementing interactive elements where supported.",
+    //         challengeList: `<li>Support for 40+ email clients including Outlook 2007-2019</li>
+    //             <li>Mobile-responsive design with text size adjustments</li>
+    //             <li>Dark mode compatibility</li>
+    //             <li>Interactive product carousel with fallbacks</li>`,
+    //         solution: "I developed a hybrid approach using MJML for the base structure while implementing custom code for critical sections requiring specific client support.",
+    //         solutionList: `<li>Table-based layout with responsive breakpoints</li>
+    //             <li>VML for Outlook background images</li>
+    //             <li>CSS targeting for dark mode adjustments</li>
+    //             <li>Progressive enhancement for interactive elements</li>`
+    //     },
+    //     oriDesign: rssSeaSaltsDesk,
+    //     htmlImp: rssSeaSaltsDesk,
+    //     desktopView: rssSeaSaltsDesk,
+    //     tabView: rssSeaSaltsDesk,
+    //     mobView: rssSeaSaltsDesk,
+    //     gmail: rssSeaSaltsDesk,
+    //     outlook: rssSeaSaltsDesk,
+    //     apple: rssSeaSaltsDesk,
+    //     alltest: "",
+    //     ctaTitle: "Need similar results for your email campaigns?",
+    //     ctaCopy: "I can help you create responsive, accessible HTML emails that look great across all major email clients."
+    // },
 
     {
-      id: 2,
+      id: 1,
       slug: "rss-promotional-email-suite",
-      title: "Red Stick Spice Co. Promotional Email Suite",
+      title: "Promotional email suite for Red Stick Spice.",
       tags: [
         {id: 1, tag: "Responsive"}, 
         {id: 2, tag: "Vibrant Design"}, 
@@ -158,9 +158,9 @@ export const emailProjectData: ProjectInfoProp[] = [
     },
 
     {
-      id: 3,
-      slug: "welcome-email-for-capture",
-      title: "Welcome email for Capture",
+      id: 2,
+      slug: "welcome-email-template-for-capture",
+      title: "Welcome email template for Capture.",
       tags: [
         {id: 1, tag: "HTML"}, 
         {id: 2, tag: "CSS"}, 
@@ -191,36 +191,47 @@ export const emailProjectData: ProjectInfoProp[] = [
     },
 
     {
-      id: 4,
-      slug: "welcome-email-for-capture",
-      title: "Welcome email for Capture",
+      id: 3,
+      slug: "linguaproofer-transactional-email-suite",
+      title: "Transactional email suite for Linguaproofer.",
       tags: [
-        {id: 1, tag: "HTML"}, 
-        {id: 2, tag: "CSS"}, 
-        {id: 3, tag: "MJML"}, 
-        {id: 4, tag: "Welcome email"},
+        {id: 1, tag: "Responsive"}, 
+        {id: 2, tag: "Vibrant Design"}, 
+        {id: 3, tag: "HTML"}, 
+        {id: 4, tag: "Transactional email"},
       ],
-      desc: "",
-      url: "https://josepholuolofinte.github.io/capture-welcome-email/",
+      desc: "A series of vibrant and engaging email templates for Red Stick Spice Co., containing 4 emails and focusing on promoting their premium spice products. The goal was to create visually appealing, user-friendly designs that effectively communicate the brand's message and drive customer engagement.",
       projectOverv: {
-          challenge: "",
+          challenge: "Create a cohesive series of promotional emails that would showcase Red Stick Spice Co.'s premium products while maintaining their artisanal brand identity and driving sales through visually compelling content.",
           challengeList: 
-              `<li></li>`,
-          solution: "",
+              `<li>Showcase product photography in an appetizing way</li>
+              <li>Create a consistent yet unique design for each campaign</li>
+              <li>Ensure mobile responsiveness across all email clients</li>
+              <li>Incorporate clear calls-to-action to drive conversions</li>
+              <li>Maintain brand voice while creating excitement for promotions</li>`,
+          solution: "I developed a series of four distinct yet cohesive email templates, each featuring striking hero images, bold headlines, and carefully structured content to highlight product features and promotional offers.",
           solutionList: 
-              `<li>Bold, attention-grabbing hero sections with product imagery</li>`
+              `<li>Bold, attention-grabbing hero sections with product imagery</li>
+              <li>Strategic color palette aligned with brand guidelines</li>
+              <li>Clear typography hierarchy for scanning readability</li>
+              <li>Modular content blocks for featured products</li>
+              <li>Custom CTA buttons optimized for click-through rates</li>`
       },
-      oriDesign: captureDesign,
-      htmlImp: captureDesktop,
-      desktopView: captureDesktop,
-      tabView: captureDesktop,
-      mobView: captureMob,
-      gmail: captureDesktop,
-      outlook: captureDesktop,
-      apple: captureDesktop,
+      desktopView: rssSeaSaltsDesk,
+      tabView: rssSeaSaltsDesk,
+      mobView: rssSeaSaltsMob,
+      campaignSeries: [
+        {id: 1, title: "Email 1", desc: "This email entices new email subscribers to take advantage of the 10% off promo to shop their favorite luxurious seal salt.", img: rss10Off}, 
+        {id: 2, title: "Email 2", desc: "This email invites subscribers to check out the store's collection of sea salts.", img: rssGourmetFeast}, 
+        {id: 3, title: "Email 3", desc: "This email builds on the previous one and takes a step further by introducing the Fleur De Sel (Flor de sal).", img: rssFleurDeSel}, 
+        {id: 4, title: `Email 4`, desc: "This email introduces Red Stick Spice's entire sea salt collection, providing information about each one.", img: rssSeaSaltsDesk},
+      ],
+      gmail: rssSeaSaltsDesk,
+      outlook: rssSeaSaltsDesk,
+      apple: rssSeaSaltsDesk,
       alltest: "",
-      ctaTitle: "",
-      ctaCopy: ""
+      ctaTitle: "Need engaging promotional emails for your products?",
+      ctaCopy: "I can help you create visually stunning, high-converting email campaigns that showcase your products and drive customer engagement."
     },
 
 ]
