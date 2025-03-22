@@ -7,6 +7,10 @@ import rssGourmetFeast from "../public/images/red-stick-spice/rss-gourmet-feast.
 import captureDesktop from "@/public/images/capture/capture-desktop.png"
 import captureMob from "@/public/images/capture/capture-mob.png"
 import captureDesign from "@/public/images/capture/capture-design.png"
+import linguaProUpdateDesk from '@/public/images/lingua/lingua-pro-update-desk.png'
+import linguaPUpdateDesk from '@/public/images/lingua/lingua-p-update-desk.png'
+import linguaPUpdateMob from '@/public/images/lingua/lingua-p-update-mob.png'
+
 
 //Empty dataset to show the structure of the content
 //optional modules are, well, optional.
@@ -167,15 +171,27 @@ export const emailProjectData: ProjectInfoProp[] = [
         {id: 3, tag: "MJML"}, 
         {id: 4, tag: "Welcome email"},
       ],
-      desc: "",
+      desc: "The Capture Welcome Email is designed to onboard new users to the Capture Digital Photography Collection. The email introduces users to the platform, sets expectations for upcoming communications, and encourages engagement through a clear CTA.",
       url: "https://josepholuolofinte.github.io/capture-welcome-email/",
       projectOverv: {
-          challenge: "",
+          challenge: "As a photography platform, Capture wanted an engaging welcome email that:",
           challengeList: 
-              `<li></li>`,
-          solution: "",
+              `
+              <li>Introduces new users to the platform in a visually appealing way.</li>
+              <li>Ensures brand consistency across desktop and mobile devices.</li>
+              <li>Encourages immediate engagement with a clear CTA.</li>
+              <li>Promotes the Capture app to drive downloads.</li>
+              <li>Maintains accessibility and readability across different devices.</li>
+              `,
+          solution: "To address these challenges, I built the email with:",
           solutionList: 
-              `<li>Bold, attention-grabbing hero sections with product imagery</li>`
+              `
+              <li>A visually rich hero section that aligns with Capture&apos;s branding.</li>
+              <li>Mobile-first responsive design ensuring seamless viewing on all devices.</li>
+              <li>A prominent CTA button placed strategically to maximize conversions.</li>
+              <li>App store badges to enhance visibility and encourage downloads.</li>
+              <li>Well-structured HTML & CSS for proper rendering across email clients.</li>
+              `
       },
       oriDesign: captureDesign,
       htmlImp: captureDesktop,
@@ -186,8 +202,8 @@ export const emailProjectData: ProjectInfoProp[] = [
       outlook: captureDesktop,
       apple: captureDesktop,
       alltest: "",
-      ctaTitle: "",
-      ctaCopy: ""
+      ctaTitle: "Need email templates with engaging, responsive designs?",
+      ctaCopy: "With a proven track record in crafting effective email templates, I'm here to bring your vision to life."
     },
 
     {
@@ -217,18 +233,16 @@ export const emailProjectData: ProjectInfoProp[] = [
               <li>Modular content blocks for featured products</li>
               <li>Custom CTA buttons optimized for click-through rates</li>`
       },
-      desktopView: rssSeaSaltsDesk,
-      tabView: rssSeaSaltsDesk,
-      mobView: rssSeaSaltsMob,
+      desktopView: linguaPUpdateDesk,
+      tabView: linguaPUpdateDesk,
+      mobView: linguaPUpdateMob,
       campaignSeries: [
-        {id: 1, title: "Email 1", desc: "This email entices new email subscribers to take advantage of the 10% off promo to shop their favorite luxurious seal salt.", img: rss10Off}, 
-        {id: 2, title: "Email 2", desc: "This email invites subscribers to check out the store's collection of sea salts.", img: rssGourmetFeast}, 
-        {id: 3, title: "Email 3", desc: "This email builds on the previous one and takes a step further by introducing the Fleur De Sel (Flor de sal).", img: rssFleurDeSel}, 
-        {id: 4, title: `Email 4`, desc: "This email introduces Red Stick Spice's entire sea salt collection, providing information about each one.", img: rssSeaSaltsDesk},
+        {id: 1, title: "Email 1", desc: "This email entices new email subscribers to take advantage of the 10% off promo to shop their favorite luxurious seal salt.", img: linguaPUpdateDesk}, 
+        {id: 2, title: "Email 2", desc: "This email invites subscribers to check out the store's collection of sea salts.", img: linguaProUpdateDesk}, 
       ],
-      gmail: rssSeaSaltsDesk,
-      outlook: rssSeaSaltsDesk,
-      apple: rssSeaSaltsDesk,
+      gmail: linguaProUpdateDesk,
+      outlook: linguaProUpdateDesk,
+      apple: linguaProUpdateDesk,
       alltest: "",
       ctaTitle: "Need engaging promotional emails for your products?",
       ctaCopy: "I can help you create visually stunning, high-converting email campaigns that showcase your products and drive customer engagement."

@@ -126,7 +126,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           campaignSeries ?
           <section className="mb-16">
             <h2 className="font-bold mb-6">The Campaign Series</h2>
-            <div className="grid grid-cols-1 laptop:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 lgtablet:grid-cols-2 gap-6">
               {          
                 campaignSeries.map((campaign, index) => (
                     <div  key={index} className="bg-white rounded-lg shadow-md p-6 overflow-hidden">
