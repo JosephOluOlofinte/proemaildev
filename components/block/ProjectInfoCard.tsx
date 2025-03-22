@@ -38,17 +38,17 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
 
         {/* Project Overview */}
         <section className="mb-16 bg-white rounded-lg shadow-md p-8">
-          <h2 className="font-bold mb-6">Project Overview</h2>
+          <h2 className="font-bold mb-6">Project overview</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="font-medium mb-3">The Challenge</h3>
+              <h3 className="font-medium mb-3">The challenge</h3>
               <p className="text-gray-700 mb-4">
                 {projectOverv.challenge}
               </p>
               <ul dangerouslySetInnerHTML={{ __html: projectOverv.challengeList }} className="list-disc pl-5 text-gray-700 space-y-2" />
             </div>
             <div>
-              <h3 className="font-medium mb-3">The Solution</h3>
+              <h3 className="font-medium mb-3">The solution</h3>
               <p className="text-gray-700 mb-4">
                 {projectOverv.solution}
               </p>
@@ -219,7 +219,6 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
           :
           null
         }
-        
         
 
         {/* Client Testing */}

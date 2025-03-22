@@ -166,10 +166,10 @@ export const emailProjectData: ProjectInfoProp[] = [
       slug: "welcome-email-template-for-capture",
       title: "Welcome email template for Capture.",
       tags: [
-        {id: 1, tag: "HTML"}, 
-        {id: 2, tag: "CSS"}, 
-        {id: 3, tag: "MJML"}, 
-        {id: 4, tag: "Welcome email"},
+        {id: 1, tag: "Multi-client support"}, 
+        {id: 2, tag: "MJML"}, 
+        {id: 3, tag: "Onboarding"}, 
+        {id: 4, tag: "Transactional email"},
       ],
       desc: "The Capture Welcome Email is designed to onboard new users to the Capture Digital Photography Collection. The email introduces users to the platform, sets expectations for upcoming communications, and encourages engagement through a clear CTA.",
       url: "https://josepholuolofinte.github.io/capture-welcome-email/",
@@ -213,32 +213,30 @@ export const emailProjectData: ProjectInfoProp[] = [
       tags: [
         {id: 1, tag: "Responsive"}, 
         {id: 2, tag: "Vibrant Design"}, 
-        {id: 3, tag: "HTML"}, 
-        {id: 4, tag: "Transactional email"},
+        {id: 3, tag: "Multi-Client Support"}, 
+        {id: 4, tag: "Transactional"},
       ],
-      desc: "A series of vibrant and engaging email templates for Red Stick Spice Co., containing 4 emails and focusing on promoting their premium spice products. The goal was to create visually appealing, user-friendly designs that effectively communicate the brand's message and drive customer engagement.",
+      desc: "A comprehensive transactional email template system for Linguaproofer, a professional proofreading and translation service. The suite includes two responsive templates that help improve communication with the agency's clients.",
       projectOverv: {
-          challenge: "Create a cohesive series of promotional emails that would showcase Red Stick Spice Co.'s premium products while maintaining their artisanal brand identity and driving sales through visually compelling content.",
+          challenge: "A small translation and proofreading agency needed a way to keep their clients informed and payments running smoothly without unnecessary delays or back-and-forth emails. Their biggest concerns were:",
           challengeList: 
-              `<li>Showcase product photography in an appetizing way</li>
-              <li>Create a consistent yet unique design for each campaign</li>
-              <li>Ensure mobile responsiveness across all email clients</li>
-              <li>Incorporate clear calls-to-action to drive conversions</li>
-              <li>Maintain brand voice while creating excitement for promotions</li>`,
-          solution: "I developed a series of four distinct yet cohesive email templates, each featuring striking hero images, bold headlines, and carefully structured content to highlight product features and promotional offers.",
+              `<li>Avoiding payment disruptions</li>
+              <li>Keeping clients in the loop</li>
+              <li>Maintaining a professional image</li>
+              <li>Making emails easy to understand</li>
+              <li>Ensuring mobile-friendliness</li>`,
+          solution: "To solve these problems, I created a transactional email suite consisting of two essential emails:",
           solutionList: 
-              `<li>Bold, attention-grabbing hero sections with product imagery</li>
-              <li>Strategic color palette aligned with brand guidelines</li>
-              <li>Clear typography hierarchy for scanning readability</li>
-              <li>Modular content blocks for featured products</li>
-              <li>Custom CTA buttons optimized for click-through rates</li>`
+              `<li><b>Payment Update Reminder </b> – A polite, easy-to-follow email that notifies clients when their payment details need updating, helping to avoid service interruptions.</li>
+              <li><b>Project Confirmation Email </b> – A reassuring email that confirms the agency has received a client’s project and outlines the next steps, keeping them informed from the start.</li>
+              `
       },
       desktopView: linguaPUpdateDesk,
       tabView: linguaPUpdateDesk,
       mobView: linguaPUpdateMob,
       campaignSeries: [
-        {id: 1, title: "Email 1", desc: "This email entices new email subscribers to take advantage of the 10% off promo to shop their favorite luxurious seal salt.", img: linguaPUpdateDesk}, 
-        {id: 2, title: "Email 2", desc: "This email invites subscribers to check out the store's collection of sea salts.", img: linguaProUpdateDesk}, 
+        {id: 1, title: "Email 1", desc: "This email notifies clients when their payment details need updating.", img: linguaPUpdateDesk}, 
+        {id: 2, title: "Email 2", desc: "This email confirms the agency has received a client’s project and outlines the next steps.", img: linguaProUpdateDesk}, 
       ],
       gmail: linguaProUpdateDesk,
       outlook: linguaProUpdateDesk,
