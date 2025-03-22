@@ -61,11 +61,11 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
         {
           oriDesign && htmlImp ?
           <section className="mb-16">
-            <h2 className="font-bold mb-6">Design to Code</h2>
+            <h2 className="font-bold mb-6">Design to code</h2>
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="grid grid-cols-1 lgtablet:grid-cols-2">
                 <div className="p-6 border-r border-b md:border-b-0">
-                  <h3 className="font-medium mb-4">Original Design</h3>
+                  <h3 className="font-medium mb-4">Original design</h3>
                   <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
                     <span className="text-gray-500">
                       <Image src={oriDesign} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "400px", height: "auto"}} />
@@ -73,7 +73,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                   </div>
                 </div>
                 <div className="p-6 border-b md:border-b-0">
-                  <h3 className="font-medium mb-4">HTML Implementation</h3>
+                  <h3 className="font-medium mb-4">HTML implementation</h3>
                   <div className="bg-gray-200 h-fit flex items-center justify-center overflow-hidden">
                     <span className="text-gray-500">
                       <Image src={htmlImp} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "500px", height: "auto"}} />
@@ -90,10 +90,10 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
 
         {/* Responsive Views */}
         <section className="mb-16">
-          <h2 className="font-bold mb-6">Responsive Behavior</h2>
+          <h2 className="font-bold mb-6">Responsive behavior</h2>
           <div className="grid grid-cols-1 lgtablet:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="font-medium mb-4">Desktop View</h3>
+              <h3 className="font-medium mb-4">Desktop view</h3>
               <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
                 <span className="text-gray-500"> 
                   <Image src={desktopView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "350px", height: "auto"}} />  
@@ -102,7 +102,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
             </div>
 
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="font-medium mb-4">Tablet View</h3>
+              <h3 className="font-medium mb-4">Tablet view</h3>
               <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
                 <span className="text-gray-500"> 
                   <Image src={tabView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "250px", maxWidth: "350px", height: "auto"}} />  
@@ -111,7 +111,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
             </div>
 
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="font-medium mb-4">Mobile View</h3>
+              <h3 className="font-medium mb-4">Mobile view</h3>
               <div className="bg-gray-200 h-fit w-full flex items-center justify-center overflow-hidden">
                 <span className="text-gray-500"> 
                   <Image src={mobView} alt={title} width={0} height={0} sizes="100vw" style={{minWidth: "150px", maxWidth: "220px", height: "auto"}} />  
@@ -125,7 +125,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
         {
           campaignSeries ?
           <section className="mb-16">
-            <h2 className="font-bold mb-6">The Campaign Series</h2>
+            <h2 className="font-bold mb-6">The campaign series</h2>
             <div className="grid grid-cols-1 lgtablet:grid-cols-2 gap-6">
               {          
                 campaignSeries.map((campaign, index) => (
@@ -224,7 +224,7 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
 
         {/* Client Testing */}
         <section className="mb-16">
-          <h2 className="font-bold mb-6">Email Client Testing</h2>
+          <h2 className="font-bold mb-6">Email client testing</h2>
           <div className="grid grid-rows-[2] gap-8">
             <div className="h-fit grid grid-cols-1 laptop:grid-cols-3 gap-4">
 
@@ -271,10 +271,6 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
                 <h3 className="font-medium">Full test video</h3>
               </div>
             </div>
-          </div>
-
-          <div className="mt-6 text-right">
-            <a href="#" className="text-indigo-600 hover:text-indigo-800">View all email client tests →</a>
           </div>
         </section>
 
