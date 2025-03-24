@@ -11,8 +11,10 @@ interface projectProps {
 }
 
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const data = emailProjectData.find((p) => p.slug === params.slug);
+export async function generateMetadata({ params }: projectProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const data = emailProjectData.find((p) => p.slug === slug);
 
   if (!data) {
     return {

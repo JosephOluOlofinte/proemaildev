@@ -3,23 +3,14 @@
 import { ProjectInfoProp } from "@/lib/types"
 import Button from "./Button"
 import Image from "next/image"
-import SEO from "./SEO"
 
 
 const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
-    slug, title, keywords, tags, desc, url, projectOverv, oriDesign, htmlImp,
+   title, tags, desc, url, projectOverv, oriDesign, htmlImp,
     desktopView, tabView, mobView, campaignSeries, modularComp, gmail, outlook, apple, alltest, ctaTitle, ctaCopy
 }) => {
   return (
     <>
-
-      <SEO 
-        title={`${title} | Proemaildeveloper`} 
-        description={desc} 
-        keywords={keywords}
-        image={desktopView}
-        url={`https://proemaildeveloper.com/projects/${slug}`}
-      />  
 
       <main className="bg-gray-100 min-h-screen">  
         <div className="max-w-5xl mx-auto px-6 py-12">
