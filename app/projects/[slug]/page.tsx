@@ -14,7 +14,7 @@ const ProjectInfo = async ({ params }: projectProps) => {
 
   const data = emailProjectData.find((item) => item.slug === slug)
 
-  return data ? <ProjectInfoCard {...data} /> : 
+  return data ?  <ProjectInfoCard {...data} /> : 
   <>
     <main className="max-w-5xl h-screen my-auto mx-auto px-6 py-12">
       <h2>Aw, snap. The project you requested does not exist on this platform.</h2> <br />

@@ -54,6 +54,7 @@ export type ProjectInfoProp = {
     id: number;
     slug: string;
     title: string;
+    keywords: string; //for SEO purposes only
     tags: Tags[];
     desc: string;
     url?: string;
@@ -90,3 +91,13 @@ export type FeaturedProjectProp = {
     tag2?: string;
     tag3?: string;
 }
+
+
+// Types for SEO props
+export interface SEOProps {
+    title: string;
+    description: string;
+    keywords: string;
+    image: StaticImageData | string;
+    url?: string;
+  }

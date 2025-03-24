@@ -120,6 +120,7 @@ export const emailProjectData: ProjectInfoProp[] = [
       id: 1,
       slug: "rss-promotional-email-suite",
       title: "Promotional email suite for Red Stick Spice.",
+      keywords: "",
       tags: [
         {id: 1, tag: "Responsive"}, 
         {id: 2, tag: "Vibrant Design"}, 
@@ -165,6 +166,7 @@ export const emailProjectData: ProjectInfoProp[] = [
       id: 2,
       slug: "welcome-email-template-for-capture",
       title: "Welcome email template for Capture.",
+      keywords: "",
       tags: [
         {id: 1, tag: "Multi-client support"}, 
         {id: 2, tag: "MJML"}, 
@@ -210,6 +212,7 @@ export const emailProjectData: ProjectInfoProp[] = [
       id: 3,
       slug: "linguaproofer-transactional-email-suite",
       title: "Transactional email suite for Linguaproofer.",
+      keywords: "",
       tags: [
         {id: 1, tag: "Responsive"}, 
         {id: 2, tag: "Vibrant Design"}, 
