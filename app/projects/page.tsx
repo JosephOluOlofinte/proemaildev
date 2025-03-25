@@ -1,5 +1,8 @@
 import FeaturedProject from '@/components/block/FeaturedProject'
 import { Fragment } from 'react'
+import rss10Off from '@/public/images/red-stick-spice/rss-10-off.png'
+import captureDesktop from '@/public/images/capture/capture-desktop.png'
+import linguaProUpdateDesk from '@/public/images/lingua/lingua-pro-update-desk.png'
 
 const page = () => {
   return (
@@ -14,7 +17,7 @@ const page = () => {
     
               <FeaturedProject 
                 slug=''
-                imgPreview='Email Preview' 
+                imgPreview={rss10Off} 
                 title='E-commerce Newsletter' 
                 desc='Responsive promotional email with interactive elements' 
                 tag1='Responsive' tag2='Dark Mode' tag3='MJML' />
@@ -23,7 +26,7 @@ const page = () => {
               {/* Project 2 */}
               <FeaturedProject 
                 slug=''
-                imgPreview='Email Preview' 
+                imgPreview={captureDesktop} 
                 title='Transactional Email Suite' 
                 desc='Set of transactional emails for SaaS platform' 
                 tag1='Outlook' tag2='Accessible' tag3='Custom' />
@@ -32,7 +35,7 @@ const page = () => {
               {/* Project 3 */}
               <FeaturedProject 
                 slug=''
-                imgPreview='Email Preview' 
+                imgPreview={linguaProUpdateDesk} 
                 title='Interactive Newsletter' 
                 desc='Interactive content with fallbacks for all e-mail clients' 
                 tag1='AMP for Email' tag2='Fallbacks' tag3='Animation' />
