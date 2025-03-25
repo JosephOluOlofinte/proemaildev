@@ -16,7 +16,7 @@ const page = () => {
               {/* Project 1 */}
     
               <FeaturedProject 
-                slug=''
+                slug='projects/rss-promotional-email-suite'
                 imgPreview={rss10Off} 
                 title='E-commerce Newsletter' 
                 desc='Responsive promotional email with interactive elements' 
@@ -25,7 +25,7 @@ const page = () => {
               
               {/* Project 2 */}
               <FeaturedProject 
-                slug=''
+                slug='projects/welcome-email-template-for-capture'
                 imgPreview={captureDesktop} 
                 title='Transactional Email Suite' 
                 desc='Set of transactional emails for SaaS platform' 
@@ -34,7 +34,7 @@ const page = () => {
               
               {/* Project 3 */}
               <FeaturedProject 
-                slug=''
+                slug='projects/linguaproofer-transactional-email-suite'
                 imgPreview={linguaProUpdateDesk} 
                 title='Interactive Newsletter' 
                 desc='Interactive content with fallbacks for all e-mail clients' 
