@@ -4,9 +4,7 @@ import "../styles/globals.css";
 import "../styles/boilerplate.css";
 import Header from "@/components/static/Header";
 import Footer from "@/components/static/Footer";
-// import purpleBg from "../public/images/ellipse-3.png"
-// import greenBg from "../public/images/ellipse-4.png"
-// import Image from "next/image";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const atkinson = Atkinson_Hyperlegible({
   weight: ["400", "700"],
@@ -37,6 +35,7 @@ export default function RootLayout({
       >
         <Header />
           {children}
+          <SpeedInsights />
         <Footer />
       </body>
     </html>
