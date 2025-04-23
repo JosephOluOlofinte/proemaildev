@@ -74,7 +74,7 @@ export type ProjectInfoProp = {
     gmail: StaticImageData | string;
     outlook: StaticImageData | string;
     apple: StaticImageData | string;
-    alltest: string;
+    alltest: string; //YouTube video ID to be used in YoutubeEmbed component
     ctaTitle: string;
     ctaCopy: string;
 }
