@@ -203,7 +203,7 @@ export const emailProjectData: ProjectInfoProp[] = [
       gmail: captureDesktop,
       outlook: captureDesktop,
       apple: captureDesktop,
-      alltest: "",
+      alltest: "0aByQTcyh0E", //YouTube video ID to be used in YoutubeEmbed component
       ctaTitle: "Need email templates with engaging, responsive designs?",
       ctaCopy: "With a proven track record in crafting effective email templates, I'm here to bring your vision to life."
     },

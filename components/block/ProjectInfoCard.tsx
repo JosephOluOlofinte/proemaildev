@@ -3,6 +3,7 @@
 import { ProjectInfoProp } from "@/lib/types"
 import Button from "./Button"
 import Image from "next/image"
+import YoutubeEmbed from "./YoutubeEmbed"
 
 
 const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
@@ -264,8 +265,8 @@ const ProjectInfoCard: React.FC<ProjectInfoProp> = ({
               </div>
 
               <div className="bg-white h-fit rounded-lg shadow-md overflow-hidden">
-                <div className="bg-gray-200 h-48 flex items-center justify-center">
-                  <span className="text-gray-500"> {alltest} me </span>
+                <div className="bg-gray-200 h-fit">
+                <YoutubeEmbed videoId={alltest} />
                 </div>
                 <div className="p-4">
                   <h3 className="font-medium">Full test video</h3>
