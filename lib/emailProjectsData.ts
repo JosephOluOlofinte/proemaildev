@@ -4,9 +4,14 @@ import rssSeaSaltsMob from "../public/images/red-stick-spice/sea-salts-mob.png"
 import rss10Off from "../public/images/red-stick-spice/rss-10-off.png"
 import rssFleurDeSel from "../public/images/red-stick-spice/rss-fluer-de-sel.png"
 import rssGourmetFeast from "../public/images/red-stick-spice/rss-gourmet-feast.png"
+
 import captureDesktop from "@/public/images/capture/capture-desktop.png"
 import captureMob from "@/public/images/capture/capture-mob.png"
 import captureDesign from "@/public/images/capture/capture-design.png"
+import captureGmail from "@/public/images/capture/capture-gmail-web.png"
+import captureAppleMail from "@/public/images/capture/capture-apple-mail.png"
+import captureOL2019 from "@/public/images/capture/capture-outlook-2019.png"
+
 import linguaProUpdateDesk from '@/public/images/lingua/lingua-pro-update-desk.png'
 import linguaPUpdateDesk from '@/public/images/lingua/lingua-p-update-desk.png'
 import linguaPUpdateMob from '@/public/images/lingua/lingua-p-update-mob.png'
@@ -200,9 +205,9 @@ export const emailProjectData: ProjectInfoProp[] = [
       desktopView: captureDesktop,
       tabView: captureDesktop,
       mobView: captureMob,
-      gmail: captureDesktop,
-      outlook: captureDesktop,
-      apple: captureDesktop,
+      gmail: captureGmail,
+      outlook: captureOL2019,
+      apple: captureAppleMail,
       alltest: "0aByQTcyh0E", //YouTube video ID to be used in YoutubeEmbed component
       ctaTitle: "Need email templates with engaging, responsive designs?",
       ctaCopy: "With a proven track record in crafting effective email templates, I'm here to bring your vision to life."
