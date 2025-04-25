@@ -162,7 +162,7 @@ export const emailProjectData: ProjectInfoProp[] = [
       gmail: rssSeaSaltsDesk,
       outlook: rssSeaSaltsDesk,
       apple: rssSeaSaltsDesk,
-      alltest: "",
+      alltest: "IwEsExLVnXU",
       ctaTitle: "Need engaging promotional emails for your products?",
       ctaCopy: "I can help you create visually stunning, high-converting email campaigns that showcase your products and drive customer engagement."
     },
