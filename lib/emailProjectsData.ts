@@ -4,6 +4,9 @@ import rssSeaSaltsMob from "../public/images/red-stick-spice/sea-salts-mob.png"
 import rss10Off from "../public/images/red-stick-spice/rss-10-off.png"
 import rssFleurDeSel from "../public/images/red-stick-spice/rss-fluer-de-sel.png"
 import rssGourmetFeast from "../public/images/red-stick-spice/rss-gourmet-feast.png"
+import rssAppleMail from "../public/images/red-stick-spice/rss-apple-mail.png"
+import rssGmailWeb from "../public/images/red-stick-spice/rss-gmail-web.png"
+import rssOl2019 from "../public/images/red-stick-spice/rss-ol-2019.png"
 
 import captureDesktop from "@/public/images/capture/capture-desktop.png"
 import captureMob from "@/public/images/capture/capture-mob.png"
@@ -159,9 +162,9 @@ export const emailProjectData: ProjectInfoProp[] = [
         {id: 3, title: "Email 3", desc: "This email builds on the previous one and takes a step further by introducing the Fleur De Sel (Flor de sal).", img: rssFleurDeSel}, 
         {id: 4, title: `Email 4`, desc: "This email introduces Red Stick Spice's entire sea salt collection, providing information about each one.", img: rssSeaSaltsDesk},
       ],
-      gmail: rssSeaSaltsDesk,
-      outlook: rssSeaSaltsDesk,
-      apple: rssSeaSaltsDesk,
+      gmail: rssGmailWeb,
+      outlook: rssOl2019,
+      apple: rssAppleMail,
       alltest: "IwEsExLVnXU",
       ctaTitle: "Need engaging promotional emails for your products?",
       ctaCopy: "I can help you create visually stunning, high-converting email campaigns that showcase your products and drive customer engagement."
