@@ -18,6 +18,9 @@ import captureOL2019 from "@/public/images/capture/capture-outlook-2019.png"
 import linguaProUpdateDesk from '@/public/images/lingua/lingua-pro-update-desk.png'
 import linguaPUpdateDesk from '@/public/images/lingua/lingua-p-update-desk.png'
 import linguaPUpdateMob from '@/public/images/lingua/lingua-p-update-mob.png'
+import linguaGmail from '@/public/images/lingua/linguaprooferGmail.png'
+import linguaAppleMail from '@/public/images/lingua/linguaprooferAppleMail.png'
+import linguaOL2019 from '@/public/images/lingua/linguaprooferOL2019.png'
 
 
 //Empty dataset to show the structure of the content
@@ -119,7 +122,7 @@ export const emailProjectData: ProjectInfoProp[] = [
     //     gmail: rssSeaSaltsDesk,
     //     outlook: rssSeaSaltsDesk,
     //     apple: rssSeaSaltsDesk,
-    //     alltest: "",
+    //     alltest: "", //YouTube video ID to be used in YoutubeEmbed component
     //     ctaTitle: "Need similar results for your email campaigns?",
     //     ctaCopy: "I can help you create responsive, accessible HTML emails that look great across all major email clients."
     // },
@@ -249,10 +252,10 @@ export const emailProjectData: ProjectInfoProp[] = [
         {id: 1, title: "Email 1", desc: "This email notifies clients when their payment details need updating.", img: linguaPUpdateDesk}, 
         {id: 2, title: "Email 2", desc: "This email confirms the agency has received a client’s project and outlines the next steps.", img: linguaProUpdateDesk}, 
       ],
-      gmail: linguaProUpdateDesk,
-      outlook: linguaProUpdateDesk,
-      apple: linguaProUpdateDesk,
-      alltest: "",
+      gmail: linguaGmail,
+      outlook: linguaOL2019,
+      apple: linguaAppleMail,
+      alltest: "0e-Ys_5YZeU", //YouTube video ID to be used in YoutubeEmbed component
       ctaTitle: "Need engaging promotional emails for your products?",
       ctaCopy: "I can help you create visually stunning, high-converting email campaigns that showcase your products and drive customer engagement."
     },
